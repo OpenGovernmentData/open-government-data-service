@@ -1,0 +1,1542 @@
+[
+    {
+        "description": " Der Datensatz liefert Polygone der Stadtbezirke, mit deren Namen und zugeh\u00f6riger st\u00e4dtischer Kennziffer",
+        "target_url": "http://stadtplan.bonn.de/geojson?Thema=14574&koordsys=25832"
+    },
+    {
+        "description": " Format GeoJson im SRS EPSG:25832",
+        "target_url": "http://stadtplan.bonn.de/geojson?Thema=20831&koordsys=25832"
+    },
+    {
+        "description": "Geodaten Beh\u00f6rden in der Stadt Krefeld Der Datensatz setzt sich aus folgendem zusammen:\r\n\r\n- Koordinaten\r\n- Name der Einrichtung\r\n- Kategorie der Einrichtung (Kategorie1)\r\n- Unterkategorie der Einrichtung (Kategorie2)\r\n- Kontaktdaten der Einrichtung (falls vorhanden)\r\n- Kurzbeschreibung (falls vorhanden)",
+        "target_url": "http://geoportal-niederrhein.de/files/opendatagis/Stadt_Krefeld/Behoerde.geojson"
+    },
+    {
+        "description": " Datensatz im Koordinaten-Referenzsystem des amtlichen Vermessungswesens NRW, ETRS89 / UTM Zone 32N mit dem Code 25832 ",
+        "target_url": "http://stadtplan.bonn.de/geojson?Thema=14734&koordsys=25832"
+    },
+    {
+        "description": "POI Gesamt Stadt Krefeld Der Datensatz setzt sich aus folgendem zusammen:\r\n\r\n- Koordinaten\r\n- Name des POI\r\n- Kategorie des POI (Kategorie1)\r\n- Unterkategorie des POI (Kategorie2)\r\n- Kontaktdaten des POI (falls vorhanden)\r\n- Kurzbeschreibung (falls vorhanden)",
+        "target_url": "http://geoportal-niederrhein.de/files/opendatagis/Stadt_Krefeld/POI_Gesamt.geojson"
+    },
+    {
+        "description": "Geodaten Jugendeinrichtungen Stadt Krefeld Der Datensatz setzt sich aus folgendem zusammen:\r\n\r\n- Koordinaten\r\n- Name der Einrichtung\r\n- Kategorie der Einrichtung (Kategorie1)\r\n- Unterkategorie der Einrichtung (Kategorie2)\r\n- Kontaktdaten der Einrichtung (falls vorhanden)\r\n- Kurzbeschreibung (falls vorhanden)",
+        "target_url": "http://geoportal-niederrhein.de/files/opendatagis/Stadt_Krefeld/Jugendeinrichtung.geojson"
+    },
+    {
+        "description": " Format GeoJson im SRS EPSG:25832",
+        "target_url": "http://stadtplan.bonn.de/geojson?Thema=14419&koordsys=25832"
+    },
+    {
+        "description": " Datensatz im Koordinaten-Referenzsystem des amtlichen Vermessungswesens NRW, ETRS89 / UTM Zone 32N mit dem Code 25832 ",
+        "target_url": "http://stadtplan.bonn.de/geojson?Thema=20815&koordsys=25832"
+    },
+    {
+        "description": " Datensatz im Koordinaten-Referenzsystem des amtlichen Vermessungswesens NRW, ETRS89 / UTM Zone 32N mit dem Code 25832 ",
+        "target_url": "http://stadtplan.bonn.de/geojson?Thema=20797&koordsys=25832"
+    },
+    {
+        "description": " <p>GEOJSON-Datei der Standorte der Wahllokale in D\u00fcsseldorf zur Landtagswahl am 14. Mai 2017.</p>\n",
+        "target_url": "https://opendata.duesseldorf.de/sites/default/files/Wahllokale_LW_2017.geojson"
+    },
+    {
+        "description": " Datensatz im Koordinaten-Referenzsystem des amtlichen Vermessungswesens NRW, ETRS89 / UTM Zone 32N mit dem Code 25832 ",
+        "target_url": "http://stadtplan.bonn.de/geojson?Thema=20916&koordsys=25832"
+    },
+    {
+        "description": " Format GeoJson im SRS EPSG:25832",
+        "target_url": "http://stadtplan.bonn.de/geojson?Thema=14755&koordsys=25832"
+    },
+    {
+        "description": " Datensatz im Koordinaten-Referenzsystem des amtlichen Vermessungswesens NRW, ETRS89 / UTM Zone 32N mit dem Code 25832 ",
+        "target_url": "http://stadtplan.bonn.de/geojson?Thema=20793&koordsys=25832"
+    },
+    {
+        "description": " Standote im Format GeoJson SRS EPSG:25832",
+        "target_url": "http://stadtplan.bonn.de/geojson?Thema=20809&koordsys=25832"
+    },
+    {
+        "description": " Datensatz im Koordinaten-Referenzsystem des amtlichen Vermessungswesens NRW, ETRS89 / UTM Zone 32N mit dem Code 25832 ",
+        "target_url": "http://stadtplan.bonn.de/geojson?Thema=20876&koordsys=25832"
+    },
+    {
+        "description": " Format GeoJson SRS EPSG:25832",
+        "target_url": "http://stadtplan.bonn.de/geojson?Thema=17246&koordsys=25832"
+    },
+    {
+        "description": " Kommunalwahlbezirke der Stadt Meerbusch",
+        "target_url": "https://opendata.meerbusch.de/dataset/28ea1d59-ba29-46cf-afdc-c4f831d3067e/resource/1ae01319-3e8e-47d6-b728-062d8eb65678/download/kommunalwahlbezirke.geojson"
+    },
+    {
+        "description": " <p>GEOJSON-Datei der Stadtbezirksgrenzen von D\u00fcsseldorf 2017</p>\n",
+        "target_url": "https://opendata.duesseldorf.de/sites/default/files/Stadtbezirksgrenzen%20D%C3%BCsseldorf%202017.geojson"
+    },
+    {
+        "description": " Datensatz im Koordinaten-Referenzsystem des amtlichen Vermessungswesens NRW, ETRS89 / UTM Zone 32N mit dem Code 25832 ",
+        "target_url": "http://stadtplan.bonn.de/geojson?Thema=14403&koordsys=25832"
+    },
+    {
+        "description": " <p>GEOJSON-Datei der Stadtteilgrenzen in D\u00fcsseldorf 2017</p>\n",
+        "target_url": "https://opendata.duesseldorf.de/sites/default/files/Stadtteilgrenzen%20D%C3%BCsseldorf%202017_0.geojson"
+    },
+    {
+        "description": " Format GeoJson SRS EPSG:25832",
+        "target_url": "http://stadtplan.bonn.de/geojson?Thema=17238&koordsys=25832"
+    },
+    {
+        "description": " Format GeoJson im SRS EPSG:25832",
+        "target_url": "http://stadtplan.bonn.de/geojson?Thema=20905&koordsys=25832"
+    },
+    {
+        "description": " Standortdaten der Dienststellen der Stadtverwaltung Bonn. Im Datensatz enthalten sind Name der Dienststelle, Geokoordinaten und Adresse. Format GeoJson SRS EPSG:25832",
+        "target_url": "http://stadtplan.bonn.de/geojson?Thema=20926&koordsys=25832"
+    },
+    {
+        "description": " Format GeoJson im SRS EPSG:25832",
+        "target_url": "http://stadtplan.bonn.de/geojson?Thema=17250&koordsys=25832"
+    },
+    {
+        "description": "GEOJSON-Format Koordinatensystem: World Geodetic System 1984 (WGS 84)",
+        "target_url": "http://data.geoportal-wesel.de/OPENDATA/Statistik/Wohnplaetze/Wohnplaetze.geojson"
+    },
+    {
+        "description": " Datensatz im Koordinaten-Referenzsystem des amtlichen Vermessungswesens NRW, ETRS89 / UTM Zone 32N mit dem Code 25832",
+        "target_url": "http://stadtplan.bonn.de/geojson?Thema=14705&koordsys=25832"
+    },
+    {
+        "description": "Geh- und Radwege in Moers ",
+        "target_url": "http://geoportal-niederrhein.de/files/opendatagis/Moers/geh_und_Radwege.geojson"
+    },
+    {
+        "description": " Datensatz mit Geokoordinaten, Adresse, Parkbezeichnung. Format GeoJson SRS EPSG:25832 ",
+        "target_url": "http://stadtplan.bonn.de/geojson?Thema=20796&koordsys=25832"
+    },
+    {
+        "description": " Datensatz im Koordinaten-Referenzsystem des amtlichen Vermessungswesens NRW, ETRS89 / UTM Zone 32N mit dem Code 25832",
+        "target_url": "http://stadtplan.bonn.de/geojson?Thema=18817&koordsys=25832"
+    },
+    {
+        "description": " Datensatz im Koordinaten-Referenzsystem des amtlichen Vermessungswesens NRW, ETRS89 / UTM Zone 32N mit dem Code 25832 ",
+        "target_url": "http://stadtplan.bonn.de/geojson?Thema=24840&koordsys=25832"
+    },
+    {
+        "description": "Wanderweg durch die Ilvericher Altrheinschlinge Die Ilvericher Altrheinschlinge ist eines der bedeutenden Naturschutzgebiete der Region. Durch Rad- und Spazierwege wunderbar erschlossen, l\u00e4dt das Gebiet zur Erholung und Entspannung ein.",
+        "target_url": "https://opendata.meerbusch.de/dataset/4ea9a116-49bd-4403-8273-e7fcefd1b204/resource/c51743e8-a413-4838-b11d-fa61148ac2f3/download/wanderwegilvericheraltrheinschlinge.geojson"
+    },
+    {
+        "description": " <p>GEOJSON-Datei der Wohnquartiergrenzen von D\u00fcsseldorf 2017</p>\n",
+        "target_url": "https://opendata.duesseldorf.de/sites/default/files/Wohnquartiergrenzen%20D%C3%BCsseldorf%202017_0.geojson"
+    },
+    {
+        "description": "POIs im Kreis Kleve POIs verschiedener Kategorien im Kreis Kleve; teils kreisweit , teils nur von einzelnen Kommunen im Kreis Kleve. Die Daten werden monatlich aus dem gemeinsamen GI-System automatisiert entladen und bereitgestellt.",
+        "target_url": "http://geoportal-niederrhein.de/files/opendatagis/Kreis_Kleve/POI_Gesamt.geojson"
+    },
+    {
+        "description": "Leuchtstellen Dieser Datensatz umfasst die Standorte der Leuchten im Eigentum der Stadt Meerbusch mit der Angabe der Leuchtstellennummer, des Stra\u00dfenschl\u00fcssels, der Gemeinde und des Gemeindeschl\u00fcssels.",
+        "target_url": "https://opendata.meerbusch.de/dataset/561b4142-be26-42c2-beed-006a185aee03/resource/6c287dc4-2cb8-4643-8316-5df6f37d0352/download/leuchtstellen.geojson"
+    },
+    {
+        "description": "Geodaten Krankenh\u00e4user Stadt Krefeld Der Datensatz setzt sich aus folgendem zusammen:\r\n\r\n- Koordinaten\r\n- Name der Einrichtung\r\n- Kategorie der Einrichtung (Kategorie1)\r\n- Unterkategorie der Einrichtung (Kategorie2)\r\n- Kontaktdaten der Einrichtung (falls vorhanden)\r\n- Kurzbeschreibung (falls vorhanden)",
+        "target_url": "http://geoportal-niederrhein.de/files/opendatagis/Stadt_Krefeld/Krankenhaus.geojson"
+    },
+    {
+        "description": " Format GeoJson SRS EPSG:25832",
+        "target_url": "http://stadtplan.bonn.de/geojson?Thema=17244&koordsys=25832"
+    },
+    {
+        "description": " Datensatz im Koordinaten-Referenzsystem des amtlichen Vermessungswesens NRW, ETRS89 / UTM Zone 32N mit dem Code 25832 ",
+        "target_url": "http://stadtplan.bonn.de/geojson?Thema=24940&koordsys=25832"
+    },
+    {
+        "description": " Datensatz im Koordinaten-Referenzsystem des amtlichen Vermessungswesens NRW, ETRS89 / UTM Zone 32N mit dem Code 25832 ",
+        "target_url": "http://stadtplan.bonn.de/geojson?Thema=21367&koordsys=25832"
+    },
+    {
+        "description": " Datensatz im Koordinaten-Referenzsystem des amtlichen Vermessungswesens NRW, ETRS89 / UTM Zone 32N mit dem Code 25832",
+        "target_url": "http://stadtplan.bonn.de/geojson?Thema=24855&koordsys=25832"
+    },
+    {
+        "description": "Geodaten \u00f6ffentliche Gr\u00fcnanlagen Stadt Krefeld Der Datensatz setzt sich aus folgendem zusammen:\r\n\r\n- Koordinaten\r\n- Name der Einrichtung\r\n- Kategorie der Einrichtung (Kategorie1)\r\n- Unterkategorie der Einrichtung (Kategorie2)\r\n- Kontaktdaten der Einrichtung (falls vorhanden)\r\n- Kurzbeschreibung (falls vorhanden)",
+        "target_url": "http://geoportal-niederrhein.de/files/opendatagis/Stadt_Krefeld/Oeffentliche_Gruenanlage.geojson"
+    },
+    {
+        "description": "Friedh\u00f6fe (Fl\u00e4chendaten) ",
+        "target_url": "http://geoportal-niederrhein.de/files/opendatagis/Moers/friedhoefe.geojson"
+    },
+    {
+        "description": " Datensatz im Koordinaten-Referenzsystem des amtlichen Vermessungswesens NRW, ETRS89 / UTM Zone 32N mit dem Code 25832 ",
+        "target_url": "http://stadtplan.bonn.de/geojson?Thema=20798&koordsys=25832"
+    },
+    {
+        "description": "GEOJSON-Format Koordinatensystem: World Geodetic System 1984 (WGS 84)",
+        "target_url": "http://data.geoportal-wesel.de/OPENDATA/Statistik/StatBez/StatBez.geojson"
+    },
+    {
+        "description": " Datensatz im Koordinaten-Referenzsystem des amtlichen Vermessungswesens NRW, ETRS89 / UTM Zone 32N mit dem Code 25832 ",
+        "target_url": "http://stadtplan.bonn.de/geojson?Thema=20833&koordsys=25832"
+    },
+    {
+        "description": " ",
+        "target_url": "http://daten.ulm.de/datenkatalog/offene_daten"
+    },
+    {
+        "description": " Der Datensatz beinhaltet neben dem geographischen Standort, die Adresse, die taktische Bezeichnung der Sirene, den Bautyp und das Baujahr der Sirene. Format GeoJson im SRS EPSG:25832\n\nDie Daten werden im Format GeoJson im Amtlichen Koordinatensystem ETRS89 / UTM Zone 32N ausgeliefert.",
+        "target_url": "http://stadtplan.bonn.de/geojson?Thema=14198&koordsys=25832"
+    },
+    {
+        "description": " Format GeoJson im SRS EPSG:25832",
+        "target_url": "http://stadtplan.bonn.de/geojson?Thema=20478&koordsys=25832"
+    },
+    {
+        "description": " Polygon im Format GeoJson im SRS EPSG:25832",
+        "target_url": "http://stadtplan.bonn.de/geojson?Thema=21248&koordsys=25832"
+    },
+    {
+        "description": " Datensatz im Format GeoJson im SRS EPSG:25832. Eine API-Dokumentation der Geodaten ist hier abrufbar: <a href=\"http://ogdcockpit.bonn.de/index.php/API_Beschreibungen\" title=\"http://ogdcockpit.bonn.de/index.php/API_Beschreibungen\">http://ogdcockpit.bonn.de/index.php/API_Beschreibungen</a>",
+        "target_url": "http://stadtplan.bonn.de/geojson?Thema=20795&koordsys=25832"
+    },
+    {
+        "description": " Datensatz mit Geokoordinaten, Adresse, Museumsnamen, Telefon, Fax, E-Mail und Internet der Institution. Format GeoJson SRS EPSG:25832 ",
+        "target_url": "http://stadtplan.bonn.de/geojson?Thema=20782&koordsys=25832"
+    },
+    {
+        "description": "Blumenampel ",
+        "target_url": "https://www.offenesdatenportal.de/dataset/86014018-1f9b-4273-96a5-36c05a7d2abf/resource/5cb45441-e52a-4b64-b4ad-f38f76f10389/download/blumenampel.json"
+    },
+    {
+        "description": " <p>GEOJSON-Datei der Stimmbezirksgrenzen in D\u00fcsseldorf 2017</p>\n",
+        "target_url": "https://opendata.duesseldorf.de/sites/default/files/Stimmbezirksgrenzen%20D%C3%BCsseldorf%202017.geojson"
+    },
+    {
+        "description": " Datensatz im Koordinaten-Referenzsystem des amtlichen Vermessungswesens NRW, ETRS89 / UTM Zone 32N mit dem Code 25832 ",
+        "target_url": "http://stadtplan.bonn.de/geojson?Thema=20388&koordsys=25832"
+    },
+    {
+        "description": " Standorte der Dienststellen des Landes NRW im Format GeoJson im SRS EPSG:25832",
+        "target_url": "http://stadtplan.bonn.de/geojson?Thema=20806&koordsys=25832"
+    },
+    {
+        "description": " Datensatz im Koordinaten-Referenzsystem des amtlichen Vermessungswesens NRW, ETRS89 / UTM Zone 32N mit dem Code 25832",
+        "target_url": "http://stadtplan.bonn.de/geojson?Thema=23728&koordsys=25832"
+    },
+    {
+        "description": " Datensatz im Koordinaten-Referenzsystem des amtlichen Vermessungswesens NRW, ETRS89 / UTM Zone 32N mit dem Code 25832 ",
+        "target_url": "http://stadtplan.bonn.de/geojson?Thema=19411&koordsys=25832"
+    },
+    {
+        "description": " Polygone im Format GeoJson im SRS EPSG:25832",
+        "target_url": "http://stadtplan.bonn.de/geojson?Thema=21247&koordsys=25832"
+    },
+    {
+        "description": "GEOJSON-Format Koordinatensystem: World Geodetic System 1984 (WGS 84)",
+        "target_url": "http://data.geoportal-wesel.de/OPENDATA/Statistik/Stimmbezirke/Stimmbezirke.geojson"
+    },
+    {
+        "description": " Datensatz im Koordinaten-Referenzsystem des amtlichen Vermessungswesens NRW, ETRS89 / UTM Zone 32N mit dem Code 25832",
+        "target_url": "http://stadtplan.bonn.de/geojson?Thema=18999&koordsys=25832"
+    },
+    {
+        "description": "Geodaten Hundekotbeutelstationen Stadt Krefeld Der Datensatz setzt sich aus folgendem zusammen:\r\n\r\n- Koordinaten\r\n- Name der Einrichtung\r\n- Kategorie der Einrichtung (Kategorie1)\r\n- Unterkategorie der Einrichtung (Kategorie2)\r\n- Kontaktdaten der Einrichtung (falls vorhanden)\r\n- Kurzbeschreibung (falls vorhanden)",
+        "target_url": "http://geoportal-niederrhein.de/files/opendatagis/Stadt_Krefeld/Hundekotstation.geojson"
+    },
+    {
+        "description": " Datensatz im Koordinaten-Referenzsystem des amtlichen Vermessungswesens NRW, ETRS89 / UTM Zone 32N mit dem Code 25832",
+        "target_url": "http://stadtplan.bonn.de/geojson?Thema=22640&koordsys=25832"
+    },
+    {
+        "description": "Geodaten Behinderteneinrichtungen Stadt Krefeld Der Datensatz setzt sich aus folgendem zusammen:\r\n\r\n- Koordinaten\r\n- Name der Einrichtung\r\n- Kategorie der Einrichtung (Kategorie1)\r\n- Unterkategorie der Einrichtung (Kategorie2)\r\n- Kontaktdaten der Einrichtung (falls vorhanden)\r\n- Kurzbeschreibung (falls vorhanden)",
+        "target_url": "http://geoportal-niederrhein.de/files/opendatagis/Stadt_Krefeld/Behinderteneinrichtung.geojson"
+    },
+    {
+        "description": "Geodaten Glaubenseinrichtungen Stadt Krefeld Der Datensatz setzt sich aus folgendem zusammen:\r\n\r\n- Koordinaten\r\n- Name der Einrichtung\r\n- Kategorie der Einrichtung (Kategorie1)\r\n- Unterkategorie der Einrichtung (Kategorie2)\r\n- Kontaktdaten der Einrichtung (falls vorhanden)\r\n- Kurzbeschreibung (falls vorhanden)",
+        "target_url": "http://geoportal-niederrhein.de/files/opendatagis/Stadt_Krefeld/Glaubenseinrichtung.geojson"
+    },
+    {
+        "description": " Datensatz im Koordinaten-Referenzsystem des amtlichen Vermessungswesens NRW, ETRS89 / UTM Zone 32N mit dem Code 25832 ",
+        "target_url": "http://stadtplan.bonn.de/geojson?Thema=20839&koordsys=25832"
+    },
+    {
+        "description": " Datensatz im Koordinaten-Referenzsystem des amtlichen Vermessungswesens NRW, ETRS89 / UTM Zone 32N mit dem Code 25832",
+        "target_url": "http://stadtplan.bonn.de/geojson?Thema=18822&koordsys=25832"
+    },
+    {
+        "description": " Fl\u00e4che im Format GeoJson im SRS EPSG:25832 <br /><br /> Im M\u00e4rz 2007 ist die Verordnung zur Kennzeichnung von Kraftfahrzeugen nach Schadstoffgruppen in Kraft getreten. Gegenstand dieser Regelungen ist einerseits die Einrichtung von \"Umweltzonen\" und andererseits die Kennzeichnung von Fahrzeugen mit Plaketten nach festgelegten Schadstoffgruppen. <br /><br /> \n\nIn ausgewiesenen Umweltzonen d\u00fcrfen nur noch Fahrzeuge verkehren, die mit der entsprechenden Plakette an der Windschutzscheibe gekennzeichnet sind. Dies gilt nicht nur f\u00fcr den Durchgangsverkehr sondern auch f\u00fcr Anwohner und Besucher in Umweltzonen.<br /><br /> \n\nDie Verordnung gilt f\u00fcr alle Personenkraftwagen und Nutzfahrzeuge, unabh\u00e4ngig von der Antriebsart (mit Verbrennungsmotoren - Benzin, Diesel oder Gas - und mit Elektroantrieb). Auch im Ausland zugelassene Fahrzeuge ben\u00f6tigen die Plakette, um in Umweltzonen einfahren zu d\u00fcrfen. Diese Kennzeichnung emissionsarmer Fahrzeuge soll vor allem in den St\u00e4dten zu einer Verringerung der Schadstoffe und dabei insbesondere der Feinstaubbelastung beitragen.",
+        "target_url": "http://stadtplan.bonn.de/geojson?Thema=14703&koordsys=25832"
+    },
+    {
+        "description": " <p>GEOJSON-Datei der Standorte \u00f6ffentlicher Toiletten D\u00fcsseldorf 2017</p>\n",
+        "target_url": "https://opendata.duesseldorf.de/sites/default/files/Standorte%20%C3%B6ffentlicher%20Toiletten%20D%C3%BCsseldorf%202017.geojson"
+    },
+    {
+        "description": "Stolpersteine in Moers Der Datensatz enth\u00e4lt die Standorte der Stolpersteine in Moers.",
+        "target_url": "http://geoportal-niederrhein.de/files/opendatagis/Moers/Kultur.geojson"
+    },
+    {
+        "description": "Gr\u00fcnfl\u00e4chen ",
+        "target_url": "https://www.offenesdatenportal.de/dataset/b920098a-f6ce-47a9-abed-5e4c4b0b0d85/resource/5ce29cb6-0506-411a-8610-5b0d2174ccf7/download/gruenflaechen.json"
+    },
+    {
+        "description": "GEOJSON-Format Koordinatensystem: World Geodetic System 1984 (WGS 84)",
+        "target_url": "http://data.geoportal-wesel.de/OPENDATA/Statistik/Stadtteile/Stadtteile.geojson"
+    },
+    {
+        "description": "GEOJSON-Format Koordinatensystem: World Geodetic System 1984 (WGS 84)",
+        "target_url": "http://data.geoportal-wesel.de/OPENDATA/Statistik/Wahlbezirke/Wahlbezirke.geojson"
+    },
+    {
+        "description": "Spielpl\u00e4tze Es handelt sich um Umrissdaten.",
+        "target_url": "http://geoportal-niederrhein.de/files/opendatagis/Moers/spielplaetze.geojson"
+    },
+    {
+        "description": " <p>GEOJSON-Datei des Stadtumrisses von D\u00fcsseldorf 2017</p>\n",
+        "target_url": "https://opendata.duesseldorf.de/sites/default/files/Stadtumriss%20D%C3%BCsseldorf%202017_0.geojson"
+    },
+    {
+        "description": "Geodaten Mobilfunksendemasten Stadt Krefeld Der Datensatz setzt sich aus folgendem zusammen:\r\n\r\n- Koordinaten\r\n- Name der Einrichtung\r\n- Kategorie der Einrichtung (Kategorie1)\r\n- Unterkategorie der Einrichtung (Kategorie2)\r\n- Kontaktdaten der Einrichtung (falls vorhanden)\r\n- Kurzbeschreibung (falls vorhanden)",
+        "target_url": "http://geoportal-niederrhein.de/files/opendatagis/Stadt_Krefeld/Mobilfunksendemast.geojson"
+    },
+    {
+        "description": " Datensatz im Koordinaten-Referenzsystem des amtlichen Vermessungswesens NRW, ETRS89 / UTM Zone 32N mit dem Code 25832 ",
+        "target_url": "http://stadtplan.bonn.de/geojson?Thema=21090&koordsys=25832"
+    },
+    {
+        "description": " <p>GEOJSON-Datei der Hochh\u00e4user in D\u00fcsseldorf \u00fcber 55 m</p>\n",
+        "target_url": "https://opendata.duesseldorf.de/sites/default/files/Hochh%C3%A4user%20in%20D%C3%BCsseldorf.geojson"
+    },
+    {
+        "description": " Format GeoJson im SRS EPSG:25832",
+        "target_url": "http://stadtplan.bonn.de/geojson?Thema=23795&koordsys=25832"
+    },
+    {
+        "description": " Format GeoJson im SRS EPSG:25832",
+        "target_url": "http://stadtplan.bonn.de/geojson?Thema=23763&koordsys=25832"
+    },
+    {
+        "description": "B\u00e4ume und Str\u00e4ucher  ",
+        "target_url": "https://www.offenesdatenportal.de/dataset/cc69db13-f6b9-4319-9ee6-3f385dc7d944/resource/6c36f4a2-560e-4689-93cc-6af845247c38/download/baumstrauch.json"
+    },
+    {
+        "description": "Geodaten \u00dcbernachtungsm\u00f6glichkeiten Stadt Krefeld Der Datensatz setzt sich aus folgendem zusammen:\r\n\r\n- Koordinaten\r\n- Name der Einrichtung\r\n- Kategorie der Einrichtung (Kategorie1)\r\n- Unterkategorie der Einrichtung (Kategorie2)\r\n- Kontaktdaten der Einrichtung (falls vorhanden)\r\n- Kurzbeschreibung (falls vorhanden)",
+        "target_url": "http://geoportal-niederrhein.de/files/opendatagis/Stadt_Krefeld/Uebernachtungsmoeglichkeit.geojson"
+    },
+    {
+        "description": "Geodaten Kinderg\u00e4rten Stadt Krefeld Der Datensatz setzt sich aus folgendem zusammen:\r\n\r\n- Koordinaten\r\n- Name der Einrichtung\r\n- Kategorie der Einrichtung (Kategorie1)\r\n- Unterkategorie der Einrichtung (Kategorie2)\r\n- Kontaktdaten der Einrichtung (falls vorhanden)\r\n- Kurzbeschreibung (falls vorhanden)",
+        "target_url": "http://geoportal-niederrhein.de/files/opendatagis/Stadt_Krefeld/Kindergarten.geojson"
+    },
+    {
+        "description": " Industriefl\u00e4chen im Bereich K\u00f6ln und Bonn",
+        "target_url": "https://databox.bonn.de/#/public/shares-downloads/BLheI8Y9eVM46IL0fANEDeYR56yPtn7q"
+    },
+    {
+        "description": " Datensatz im Koordinaten-Referenzsystem des amtlichen Vermessungswesens NRW, ETRS89 / UTM Zone 32N mit dem Code 25832 ",
+        "target_url": "http://stadtplan.bonn.de/geojson?Thema=20849&koordsys=25832"
+    },
+    {
+        "description": " Datensatz im Koordinaten-Referenzsystem des amtlichen Vermessungswesens NRW, ETRS89 / UTM Zone 32N mit dem Code 25832 ",
+        "target_url": "http://stadtplan.bonn.de/geojson?Thema=20904&koordsys=25832"
+    },
+    {
+        "description": " Datensatz im Koordinaten-Referenzsystem des amtlichen Vermessungswesens NRW, ETRS89 / UTM Zone 32N mit dem Code 25832 ",
+        "target_url": "http://stadtplan.bonn.de/geojson?Thema=25013&koordsys=25832"
+    },
+    {
+        "description": " Format GeoJson im SRS EPSG:25832",
+        "target_url": "http://stadtplan.bonn.de/geojson?Thema=21483&koordsys=25832"
+    },
+    {
+        "description": " Datensatz im Koordinaten-Referenzsystem des amtlichen Vermessungswesens NRW, ETRS89 / UTM Zone 32N mit dem Code 25832",
+        "target_url": "http://stadtplan.bonn.de/geojson?Thema=25100&koordsys=25832"
+    },
+    {
+        "description": "GEOJSON-Format Koordinatensystem: World Geodetic System 1984 (WGS 84)",
+        "target_url": "http://data.geoportal-wesel.de/OPENDATA/Statistik/Stadtgebiet/Stadtgebiet_Wesel.geojson"
+    },
+    {
+        "description": "Geodaten Kultur Stadt Krefeld Der Datensatz setzt sich aus folgendem zusammen:\r\n\r\n- Koordinaten\r\n- Name der Einrichtung\r\n- Kategorie der Einrichtung (Kategorie1)\r\n- Unterkategorie der Einrichtung (Kategorie2)\r\n- Kontaktdaten der Einrichtung (falls vorhanden)\r\n- Kurzbeschreibung (falls vorhanden)",
+        "target_url": "http://geoportal-niederrhein.de/files/opendatagis/Stadt_Krefeld/Kultur.geojson"
+    },
+    {
+        "description": " Format GeoJson im SRS EPSG:25832",
+        "target_url": "http://stadtplan.bonn.de/geojson?Thema=20794&koordsys=25832"
+    },
+    {
+        "description": "Geodaten Sport Stadt Krefeld Der Datensatz setzt sich aus folgendem zusammen:\r\n\r\n- Koordinaten\r\n- Name der Einrichtung\r\n- Kategorie der Einrichtung (Kategorie1)\r\n- Unterkategorie der Einrichtung (Kategorie2)\r\n- Kontaktdaten der Einrichtung (falls vorhanden)\r\n- Kurzbeschreibung (falls vorhanden)",
+        "target_url": "http://geoportal-niederrhein.de/files/opendatagis/Stadt_Krefeld/Sport.geojson"
+    },
+    {
+        "description": "Geodaten Kinderspielpl\u00e4tze Stadt Krefeld Der Datensatz setzt sich aus folgendem zusammen:\r\n\r\n- Koordinaten\r\n- Name der Einrichtung\r\n- Kategorie der Einrichtung (Kategorie1)\r\n- Unterkategorie der Einrichtung (Kategorie2)\r\n- Kontaktdaten der Einrichtung (falls vorhanden)\r\n- Kurzbeschreibung (falls vorhanden)",
+        "target_url": "http://geoportal-niederrhein.de/files/opendatagis/Stadt_Krefeld/Kinderspielplatz.geojson"
+    },
+    {
+        "description": "Geodaten Altenpflegeheime Stadt Krefeld Der Datensatz setzt sich aus folgendem zusammen:\r\n\r\n- Koordinaten\r\n- Name der Einrichtung\r\n- Kategorie der Einrichtung (Kategorie1)\r\n- Unterkategorie der Einrichtung (Kategorie2)\r\n- Kontaktdaten der Einrichtung (falls vorhanden)\r\n- Kurzbeschreibung (falls vorhanden)",
+        "target_url": "http://geoportal-niederrhein.de/files/opendatagis/Stadt_Krefeld/Altenpflegeheim.geojson"
+    },
+    {
+        "description": " Standorte der Kinderg\u00e4rten, Kindertageseinrichtungen, Kinderhorte und der Heilp\u00e4dagogischen Kinderg\u00e4rten. Die Daten beinhalten Angaben zum Namen der Einrichtung, Adresse. Hinsichtlich der Angaben zu den freien Tr\u00e4ger wird keine Gew\u00e4hr hinsichtlich der Vollst\u00e4ndigkeit \u00fcbernommen. Standorte im Format GeoJson SRS EPSG:25832",
+        "target_url": "http://stadtplan.bonn.de/geojson?Thema=20919&koordsys=25832"
+    },
+    {
+        "description": " Geokoordinaten und Adresse der Parkh\u00e4user in Bonn. Format GeoJson im SRS EPSG:25832",
+        "target_url": "http://stadtplan.bonn.de/geojson?Thema=20906&koordsys=25832"
+    },
+    {
+        "description": " Datensatz im Koordinaten-Referenzsystem des amtlichen Vermessungswesens NRW, ETRS89 / UTM Zone 32N mit dem Code 25832 ",
+        "target_url": "http://stadtplan.bonn.de/geojson?Thema=14745&koordsys=25832"
+    },
+    {
+        "description": "Geodaten Parken Stadt Krefeld Der Datensatz setzt sich aus folgendem zusammen:\r\n\r\n- Koordinaten\r\n- Name der Einrichtung\r\n- Kategorie der Einrichtung (Kategorie1)\r\n- Unterkategorie der Einrichtung (Kategorie2)\r\n- Kontaktdaten der Einrichtung (falls vorhanden)\r\n- Kurzbeschreibung (falls vorhanden)",
+        "target_url": "http://geoportal-niederrhein.de/files/opendatagis/Stadt_Krefeld/Parken.geojson"
+    },
+    {
+        "description": " Standorte der touristischen Sehensw\u00fcrdigkeiten in Bonn. Der Datensatz umfasst Geokoordinaten, Bezeichnung der Sehensw\u00fcrdigkeit und Adresse. Format GeoJson im SRS EPSG:25832",
+        "target_url": "http://stadtplan.bonn.de/geojson?Thema=20803&koordsys=25832"
+    },
+    {
+        "description": " Standorte im Format GeoJson SRS EPSG:25832",
+        "target_url": "http://stadtplan.bonn.de/geojson?Thema=20864&koordsys=25832"
+    },
+    {
+        "description": " ",
+        "target_url": "https://databox.bonn.de/#/public/shares-downloads/4mwRAH9x6xV1qAibCyQSDARNUg1eR9uN"
+    },
+    {
+        "description": "Geodaten Schulen Stadt Krefeld Der Datensatz setzt sich aus folgendem zusammen:\r\n\r\n- Koordinaten\r\n- Name der Einrichtung\r\n- Kategorie der Einrichtung (Kategorie1)\r\n- Unterkategorie der Einrichtung (Kategorie2)\r\n- Kontaktdaten der Einrichtung (falls vorhanden)\r\n- Kurzbeschreibung (falls vorhanden)",
+        "target_url": "http://geoportal-niederrhein.de/files/opendatagis/Stadt_Krefeld/Schule.geojson"
+    },
+    {
+        "description": " Standorte mit Geokoordinaten, Adresse, Name des Krankenhauses sowie Angaben zum Internetauftritt, E-Mailadresse, Telefon und Fax. Format GeoJson im SRS EPSG:25832",
+        "target_url": "http://stadtplan.bonn.de/geojson?Thema=20848&koordsys=25832"
+    },
+    {
+        "description": " ",
+        "target_url": "https://databox.bonn.de/#/public/shares-downloads/2gfp7M6f4N1ILqWqFku4KCAqOi3zMEVG"
+    },
+    {
+        "description": " Datensatz im Koordinaten-Referenzsystem des amtlichen Vermessungswesens NRW, ETRS89 / UTM Zone 32N mit dem Code 25832",
+        "target_url": "http://stadtplan.bonn.de/geojson?Thema=19584&koordsys=25832"
+    },
+    {
+        "description": " Datensatz im Koordinaten-Referenzsystem des amtlichen Vermessungswesens NRW, ETRS89 / UTM Zone 32N mit dem Code 25832 ",
+        "target_url": "http://stadtplan.bonn.de/geojson?Thema=20729&koordsys=25832"
+    },
+    {
+        "description": " Datensatz im Koordinaten-Referenzsystem des amtlichen Vermessungswesens NRW, ETRS89 / UTM Zone 32N mit dem Code 25832 ",
+        "target_url": "http://stadtplan.bonn.de/geojson?Thema=14190&koordsys=25832"
+    },
+    {
+        "description": " Datensatz im Koordinaten-Referenzsystem des amtlichen Vermessungswesens NRW, ETRS89 / UTM Zone 32N mit dem Code 25832",
+        "target_url": "http://stadtplan.bonn.de/geojson?Thema=20074&koordsys=25832"
+    },
+    {
+        "description": "Fernw\u00e4rmevorranggebiete ",
+        "target_url": "https://geo.sv.rostock.de/download/opendata/fernwaermevorranggebiete/fernwaermevorranggebiete.json"
+    },
+    {
+        "description": " <p>GEOJSON-Datei der D\u00fcsseldorfer Baubl\u00f6cke mit Stand 2017.</p>\n\n<p>Ein Baublock ist ein Teil eines \u00fcberwiegend bebauten Baugebietes, der in der Regel allseits von topographischen Linien, insbesondere von Stra\u00dfen oder Wegen, umschlossen ist. Er besteht aus mehreren direkt aneinandergrenzenden Grundst\u00fccken bzw. Flurst\u00fccken. Baubl\u00f6cke bilden auch die r\u00e4umliche Basisstruktur zur Erfassung statistischer Daten.</p>\n",
+        "target_url": "https://opendata.duesseldorf.de/sites/default/files/D%C3%BCsseldorf%20Baubl%C3%B6cke%202017.geojson"
+    },
+    {
+        "description": " Datensatz im Koordinaten-Referenzsystem des amtlichen Vermessungswesens NRW, ETRS89 / UTM Zone 32N mit dem Code 25832 ",
+        "target_url": "http://stadtplan.bonn.de/geojson?Thema=25605&koordsys=25832"
+    },
+    {
+        "description": "Wetterdaten Moers Es handelt sich bei den Daten nicht um offizielle Daten der Stadt Moers. Die Feinstaubsensoren werden privat als Hobby betrieben. Der Betreiber kann weder Gew\u00e4hr noch Garantie auf Daten und deren Verf\u00fcgbarkeit geben. ",
+        "target_url": "http://download.moers.de/Wetter/OpenDataWetterGJson.php"
+    },
+    {
+        "description": "GEOJSON-Format Koordinatensystem: World Geodetic System 1984 (WGS 84)",
+        "target_url": "http://data.geoportal-wesel.de/OPENDATA/Baugrundstuecke/Baugrundstuecke.geojson"
+    },
+    {
+        "description": "Biotopfl\u00e4che Der Datensatz enth\u00e4lt die Geodaten (in WGS 84 ) zur Biotopfl\u00e4che in Moers.",
+        "target_url": "https://www.offenesdatenportal.de/dataset/0fad3c10-edf9-42ad-932b-2669c14e6273/resource/a11cf5f7-9d6a-41b8-91ef-61c89477acf1/download/biotopflaeche.json"
+    },
+    {
+        "description": " Datensatz im WGS84 Koordinatensystem SRS EPSG:4326",
+        "target_url": "http://stadtplan.bonn.de/geojson?Thema=20815&koordsys=4326"
+    },
+    {
+        "description": " Datensatz im WGS84 Koordinatensystem SRS EPSG:4326",
+        "target_url": "http://stadtplan.bonn.de/geojson?Thema=20797&koordsys=4326"
+    },
+    {
+        "description": " Datensatz im WGS84 Koordinatensystem SRS EPSG:4326",
+        "target_url": "http://stadtplan.bonn.de/geojson?Thema=20916&koordsys=4326"
+    },
+    {
+        "description": " Format GeoJson im SRS EPSG:25832",
+        "target_url": "http://stadtplan.bonn.de/geojson?Thema=14698&koordsys=25832"
+    },
+    {
+        "description": " Datensatz im WGS84 Koordinatensystem SRS EPSG:4326",
+        "target_url": "http://stadtplan.bonn.de/geojson?Thema=20793&koordsys=4326"
+    },
+    {
+        "description": "bergbauwanderweg ",
+        "target_url": "https://www.offenesdatenportal.de/dataset/1e996726-7993-43b0-83bd-9ac1c6e199ea/resource/dbfa81b3-b3c3-4340-bd0d-e36dc777949d/download/bergbauwanderweg.json"
+    },
+    {
+        "description": "Parkfl\u00e4chen Der Datensatz enth\u00e4lt die Geodaten (in WGS 84 ) zu Parkfl\u00e4chen in Moers.",
+        "target_url": "http://geoportal-niederrhein.de/files/opendatagis/Moers/parkanlagen.geojson"
+    },
+    {
+        "description": " Datensatz im WGS84 Koordinatensystem SRS EPSG:4326",
+        "target_url": "http://stadtplan.bonn.de/geojson?Thema=20876&koordsys=4326"
+    },
+    {
+        "description": " Datensatz im WGS84 Koordinatensystem SRS EPSG:4326",
+        "target_url": "http://stadtplan.bonn.de/geojson?Thema=14403&koordsys=4326"
+    },
+    {
+        "description": "Radouten-kreis-kleve Radrouten im Kreis Kleve. Drei Radrouten im Kreis Kleve (95 bis 157 km lang) ",
+        "target_url": "http://offenedaten.kreis-kleve.de/files/Fachbereich_6/gisverb/Radrouten_Kreis_Kleve/Radrouten_Kreis_Kleve.geojson"
+    },
+    {
+        "description": "Kindertagesst\u00e4tten Geodaten Der Datensatz enth\u00e4lt die Geodaten (in WGS 84 ) zu den Kindertageseinrichtungen in Moers. Im Datensatz enthalten sind auch die Kontaktdaten zu den Kindertageseinrichtungen.",
+        "target_url": "https://www.offenesdatenportal.de/dataset/3b4f2aba-ba28-4e7f-aed8-69099c723eab/resource/7f3c35bb-f049-4ec9-9af3-4ac5fb3a0a70/download/kigamoers.json"
+    },
+    {
+        "description": "Stadtbuslinien ",
+        "target_url": "https://geo.sv.rostock.de/download/opendata/stadtbuslinien/stadtbuslinien.json"
+    },
+    {
+        "description": " Datensatz im WGS84 Koordinatensystem SRS EPSG:4326",
+        "target_url": "http://stadtplan.bonn.de/geojson?Thema=14705&koordsys=4326"
+    },
+    {
+        "description": " Datensatz im WGS84 Koordinatensystem SRS EPSG:4326",
+        "target_url": "http://stadtplan.bonn.de/geojson?Thema=18817&koordsys=25832"
+    },
+    {
+        "description": " Datensatz im WGS84 Koordinatensystem SRS EPSG:4326",
+        "target_url": "http://stadtplan.bonn.de/geojson?Thema=24840&koordsys=4326"
+    },
+    {
+        "description": "Grundwasserflurabstand ",
+        "target_url": "https://geo.sv.rostock.de/download/opendata/grundwasserflurabstand/grundwasserflurabstand.json"
+    },
+    {
+        "description": "Denkm\u00e4ler (Punktdaten) Der Datensatz enth\u00e4lt die Geodaten (Punktdaten in WGS 84 ) zu den Denkm\u00e4lern in Moers.",
+        "target_url": "https://www.offenesdatenportal.de/dataset/51df29ae-ca71-4791-b8cd-37893adceb5a/resource/769818c3-4c97-4ea0-bed6-503c43fe2405/download/denkmale-punkte-geo.geojson"
+    },
+    {
+        "description": " Datensatz im WGS84 Koordinatensystem SRS EPSG:4326",
+        "target_url": "http://stadtplan.bonn.de/geojson?Thema=24940&koordsys=4326"
+    },
+    {
+        "description": " Datensatz im WGS84 Koordinatensystem SRS EPSG:4326",
+        "target_url": "http://stadtplan.bonn.de/geojson?Thema=21367&koordsys=4326"
+    },
+    {
+        "description": " Datensatz im WGS84 Koordinatensystem SRS EPSG:4326",
+        "target_url": "http://stadtplan.bonn.de/geojson?Thema=24855&koordsys=4326"
+    },
+    {
+        "description": " Datensatz im WGS84 Koordinatensystem SRS EPSG:4326",
+        "target_url": "http://stadtplan.bonn.de/geojson?Thema=20798&koordsys=4326"
+    },
+    {
+        "description": "Geothermiepotential ",
+        "target_url": "https://geo.sv.rostock.de/download/opendata/geothermiepotential/geothermiepotential.json"
+    },
+    {
+        "description": "Uferlinie ",
+        "target_url": "https://geo.sv.rostock.de/download/opendata/uferlinie_mecklenburg-vorpommern/uferlinie_mecklenburg-vorpommern.json"
+    },
+    {
+        "description": "Kleing\u00e4rten Der Datensatz enth\u00e4lt die Geodaten (in WGS 84 ) zu den Kleing\u00e4rten in Moers",
+        "target_url": "http://geoportal-niederrhein.de/files/opendatagis/Moers/kleingaerten.geojson"
+    },
+    {
+        "description": "UTM-Gitter 1x1km Der Datensatz enth\u00e4lt die UTM-Gitter mit einer Rasterweite von 1x1 Kilometer im Format GeoJSON.\r\nDie Bezeichnungen stehen \u00fcber eine attributive Abfrage der Geometriedaten zur Verf\u00fcgung. Alternativ \u00fcber den Datensatz UTM-Gitter 1x1km Texte (ebenfalls im GeoJSON-Format).",
+        "target_url": "http://offenedaten.kreis-kleve.de/files/Fachbereich_6/gisverb/UTM_Gitter/RASTER_1X1KM_UTM.json"
+    },
+    {
+        "description": " Datensatz im WGS84 Koordinatensystem SRS EPSG:4326",
+        "target_url": "http://stadtplan.bonn.de/geojson?Thema=20833&koordsys=4326"
+    },
+    {
+        "description": "Standorte der Defibrillatoren Der Datensatz enth\u00e4lt die Geodaten (in WGS 84 ) zu den Standorten von Defibrillatoren in Moers.",
+        "target_url": "https://www.offenesdatenportal.de/dataset/816edee0-482d-4c2c-b548-529804802e1d/resource/c5585ccd-a26a-4a6d-89ba-5b89be5a5e3f/download/defi.json"
+    },
+    {
+        "description": "niederrheinweg ",
+        "target_url": "https://www.offenesdatenportal.de/dataset/829a89b0-53d3-46b5-b3b5-c775379c12a8/resource/24f171bf-1ea4-4fcf-89b7-67c18a857b43/download/niederrheinweg.json"
+    },
+    {
+        "description": " Datensatz im WGS84 Koordinatensystem SRS EPSG:4326",
+        "target_url": "http://stadtplan.bonn.de/geojson?Thema=20388&koordsys=4326"
+    },
+    {
+        "description": "Sch\u00f6pfwerkeinflussbereiche ",
+        "target_url": "https://geo.sv.rostock.de/download/opendata/schoepfwerkeinflussbereiche/schoepfwerkeinflussbereiche.json"
+    },
+    {
+        "description": "Hundekotstationen in Moers Der Datensatz enth\u00e4lt die Geodaten (in WGS 84 ) der Hundekotbeutelspenderstandorte in Moers.",
+        "target_url": "http://geoportal-niederrhein.de/files/opendatagis/Moers/Rund_ums_Tier.geojson"
+    },
+    {
+        "description": " Datensatz im WGS84 Koordinatensystem SRS EPSG:4326",
+        "target_url": "http://stadtplan.bonn.de/geojson?Thema=23728&koordsys=4326"
+    },
+    {
+        "description": " Datensatz im WGS84 Koordinatensystem SRS EPSG:4326",
+        "target_url": "http://stadtplan.bonn.de/geojson?Thema=19411&koordsys=4326"
+    },
+    {
+        "description": " Datensatz im WGS84 Koordinatensystem SRS EPSG:4326",
+        "target_url": "http://stadtplan.bonn.de/geojson?Thema=18999&koordsys=4326"
+    },
+    {
+        "description": " Datensatz im WGS84 Koordinatensystem SRS EPSG:4326",
+        "target_url": "http://stadtplan.bonn.de/geojson?Thema=22640&koordsys=4326"
+    },
+    {
+        "description": "Wohnpl\u00e4tze GeoJSON-Datei",
+        "target_url": "https://www.offenesdatenportal.de/dataset/9fac6779-1185-4eeb-b59e-d47f0960b92f/resource/7cb36433-7ccc-4d7b-a549-dbeb2e7ca78e/download/neues-textdokument.geojson"
+    },
+    {
+        "description": "fahrradstaender ",
+        "target_url": "http://geoportal-niederrhein.de/files/opendatagis/Moers/fahrradstaender.geojson"
+    },
+    {
+        "description": " Datensatz im WGS84 Koordinatensystem SRS EPSG:4326",
+        "target_url": "http://stadtplan.bonn.de/geojson?Thema=20839&koordsys=4326"
+    },
+    {
+        "description": "Ausgleichsfl\u00e4chen Der Datensatz enth\u00e4lt die Geodaten (in WGS 84 ) zu Ausgleichsfl\u00e4chen in Moers.",
+        "target_url": "http://geoportal-niederrhein.de/files/opendatagis/Moers/ausgleichsflaechen.geojson"
+    },
+    {
+        "description": " Datensatz im WGS84 Koordinatensystem SRS EPSG:4326",
+        "target_url": "http://stadtplan.bonn.de/geojson?Thema=18822&koordsys=4326"
+    },
+    {
+        "description": "Autoladestationen Der Datensatz enth\u00e4lt die Geodaten (in WGS 84 ) zu Autoladestationen in Moers.",
+        "target_url": "http://geoportal-niederrhein.de/files/opendatagis/Moers/Auto_Ladestationen.geojson"
+    },
+    {
+        "description": "Kindertagesst\u00e4tten Kindertagesst\u00e4tten im Stadtgebiet Meerbusch",
+        "target_url": "https://opendata.meerbusch.de/dataset/bbe01082-e668-4985-b66f-9bf3be02504d/resource/f808d5d8-2532-423b-b5bb-bdfb53810e83/download/meerbuscher-kitas-stand-april-2017.geojson"
+    },
+    {
+        "description": "Stra\u00dfenbeleuchtung ",
+        "target_url": "http://geoportal-niederrhein.de/files/opendatagis/Moers/strassenbeleuchtung.geojson"
+    },
+    {
+        "description": "Schornsteinfegerkehrbezirke Kreis Kleve Grafische Darstellung der Schornsteinfegerkehrbezirke im Kreis Kleve. Geometrie im Koordinatensystem UTM (EPSG 25832).",
+        "target_url": "http://offenedaten.kreis-kleve.de/files/Fachbereich_6/gisverb/Schornsteinfegerkehrbezirke_Kreis_Kleve/Schornsteinfegerkehrbezirke_Kreis_Kleve.geojson"
+    },
+    {
+        "description": "Abgrabungen im Kreis Kleve Darstellung aller genehmigten Abgrabungen im Kreis Kleve. ",
+        "target_url": "http://offenedaten.kreis-kleve.de/files/Fachbereich_6/gisverb/Abgrabungen_Kreis_Kleve/Abgrabungen_Kreis_Kleve.geojson"
+    },
+    {
+        "description": " Datensatz im WGS84 Koordinatensystem SRS EPSG:4326",
+        "target_url": "http://stadtplan.bonn.de/geojson?Thema=21090&koordsys=4326"
+    },
+    {
+        "description": "Baumstandorte der Stadt Krefeld Alle Baumobjekte enthalten die folgenden Attribute:\r\n\r\n- OBJEKT_NR\r\n- OBJEKTBEZ (Objektbezeichnung)\r\n- BAUMNUMMER\r\n- BAUMART\r\n- BOTANISCHER_NAME\r\n- PFLANZJAHR\r\n",
+        "target_url": "http://geoportal-niederrhein.de/files/opendatagis/Stadt_Krefeld/Aktueller_Baumbestand.geojson"
+    },
+    {
+        "description": "GEOJSON-Format Koordinatensystem: World Geodetic System 1984 (WGS 84)",
+        "target_url": "http://data.geoportal-wesel.de/OPENDATA/Adressen/Adressen.geojson"
+    },
+    {
+        "description": " Datensatz im WGS84 Koordinatensystem SRS EPSG:4326",
+        "target_url": "http://stadtplan.bonn.de/geojson?Thema=20849&koordsys=25832"
+    },
+    {
+        "description": "Naturschutzdaten Kreis Kleve In diesem Datensatz befinden sich die in den Landschaftspl\u00e4nen (oder durch Rechtsverordnung) festgesetzten Naturschutzgebiete, Landschaftsschutzgebiete, gesch\u00fctzte Landschaftsbestandteile, Schutzausweisungen und die Naturdenkmale des Kreises Kleve. ",
+        "target_url": "http://offenedaten.kreis-kleve.de/files/Fachbereich_6/gisverb/Naturschutzdaten_Kreis_Kleve/Naturschutzdaten_Kreis_Kleve_geojson.zip"
+    },
+    {
+        "description": " Datensatz im WGS84 Koordinatensystem SRS EPSG:4326",
+        "target_url": "http://stadtplan.bonn.de/geojson?Thema=20904&koordsys=25832"
+    },
+    {
+        "description": " Datensatz im WGS84 Koordinatensystem SRS EPSG:4326",
+        "target_url": "http://stadtplan.bonn.de/geojson?Thema=25013&koordsys=4326"
+    },
+    {
+        "description": " Datensatz im WGS84 Koordinatensystem SRS EPSG:4326",
+        "target_url": "http://stadtplan.bonn.de/geojson?Thema=25100&koordsys=4326"
+    },
+    {
+        "description": "Radwege ",
+        "target_url": "https://geo.sv.rostock.de/download/opendata/radwege/radwege.json"
+    },
+    {
+        "description": " Datensatz im WGS84 Koordinatensystem SRS EPSG:4326",
+        "target_url": "http://stadtplan.bonn.de/geojson?Thema=20906&koordsys=4326"
+    },
+    {
+        "description": "Wasserfl\u00e4chen Der Datensatz enth\u00e4lt die Geodaten (in WGS 84 ) zu Wasserfl\u00e4chen in Moers.",
+        "target_url": "http://geoportal-niederrhein.de/files/opendatagis/Moers/wasserflaeche.geojson"
+    },
+    {
+        "description": " Datensatz im WGS84 Koordinatensystem SRS EPSG:4326",
+        "target_url": "http://stadtplan.bonn.de/geojson?Thema=14745&koordsys=4326"
+    },
+    {
+        "description": "Waldfl\u00e4chen Der Datensatz enth\u00e4lt die Geodaten (in WGS 84 ) zu Waldfl\u00e4chen in Moers.",
+        "target_url": "http://geoportal-niederrhein.de/files/opendatagis/Moers/waldflaechen.geojson"
+    },
+    {
+        "description": "Stra\u00dfenbahnlinien ",
+        "target_url": "https://geo.sv.rostock.de/download/opendata/strassenbahnlinien/strassenbahnlinien.json"
+    },
+    {
+        "description": "Sitzgelegenheiten im \u00f6ffentlichen Raum Der Datensatz enth\u00e4lt Sitzgelegenheiten im \u00f6ffentlichen Raum Moers und wird viertelj\u00e4hrlich aktualisiert.",
+        "target_url": "http://geoportal-niederrhein.de/files/opendatagis/Moers/Sitzgelegenheiten.geojson"
+    },
+    {
+        "description": "Standorte Schulen Standorte der Schulen im Stadtgebiet Meerbusch",
+        "target_url": "https://opendata.meerbusch.de/dataset/f5250d92-99b4-4f6d-a34c-7a59192d59f7/resource/1b1f2bb0-0923-42e3-be9e-524c6b130db7/download/meerbuscher-schulen-stand-22017.geojson"
+    },
+    {
+        "description": " Datensatz im WGS84 Koordinatensystem SRS EPSG:4326",
+        "target_url": "http://stadtplan.bonn.de/geojson?Thema=19584&koordsys=4326"
+    },
+    {
+        "description": "UTM-Gitter 2x2km Der Datensatz enth\u00e4lt die UTM-Gitter mit einer Rasterweite von 2x2 Kilometer im Format GeoJSON.\r\nDie Bezeichnungen stehen nur \u00fcber eine attributive Abfrage der Geometriedaten zur Verf\u00fcgung.",
+        "target_url": "http://offenedaten.kreis-kleve.de/files/Fachbereich_6/gisverb/UTM_Gitter/RASTER_2x2KM_UTM.json"
+    },
+    {
+        "description": "Containerstandorte Der Datensatz enth\u00e4lt die Geodaten (in WGS 84 ) zu den Containerstandorten in Moers.",
+        "target_url": "http://geoportal-niederrhein.de/files/opendatagis/Moers/Ver_und_Entsorgung.geojson"
+    },
+    {
+        "description": " Datensatz im WGS84 Koordinatensystem SRS EPSG:4326",
+        "target_url": "http://stadtplan.bonn.de/geojson?Thema=20729&koordsys=4326"
+    },
+    {
+        "description": " Datensatz im WGS84 Koordinatensystem SRS EPSG:4326",
+        "target_url": "http://stadtplan.bonn.de/geojson?Thema=14190&koordsys=4326"
+    },
+    {
+        "description": " Datensatz im WGS84 Koordinatensystem SRS EPSG:4326",
+        "target_url": "http://stadtplan.bonn.de/geojson?Thema=20074&koordsys=4326"
+    },
+    {
+        "description": "Gemeinden und gemeindefreie Kommunen Mecklenburg-Vorpommern ",
+        "target_url": "https://geo.sv.rostock.de/download/opendata/gemeinden_mecklenburg-vorpommern/gemeinden_mecklenburg-vorpommern.json"
+    },
+    {
+        "description": "Polizeidienststellen ",
+        "target_url": "https://geo.sv.rostock.de/download/opendata/polizeidienststellen/polizeidienststellen.json"
+    },
+    {
+        "description": "Ger\u00e4tespielanlagen ",
+        "target_url": "https://geo.sv.rostock.de/download/opendata/geraetespielanlagen/geraetespielanlagen.json"
+    },
+    {
+        "description": "F\u00e4hranleger ",
+        "target_url": "https://geo.sv.rostock.de/download/opendata/faehranleger/faehranleger.json"
+    },
+    {
+        "description": "Bibliotheken ",
+        "target_url": "https://geo.sv.rostock.de/download/opendata/bibliotheken/bibliotheken.json"
+    },
+    {
+        "description": "Getr\u00e4nkem\u00e4rkte ",
+        "target_url": "https://geo.sv.rostock.de/download/opendata/getraenkemaerkte/getraenkemaerkte.json"
+    },
+    {
+        "description": "Gemeindeteile Mecklenburg-Vorpommern ",
+        "target_url": "https://geo.sv.rostock.de/download/opendata/gemeindeteile_mecklenburg-vorpommern/gemeindeteile_mecklenburg-vorpommern.json"
+    },
+    {
+        "description": "Schwimmb\u00e4der ",
+        "target_url": "https://geo.sv.rostock.de/download/opendata/schwimmbaeder/schwimmbaeder.json"
+    },
+    {
+        "description": "Reisebusparkpl\u00e4tze und -terminals ",
+        "target_url": "https://geo.sv.rostock.de/download/opendata/reisebusparkplaetze_terminals/reisebusparkplaetze_terminals.json"
+    },
+    {
+        "description": "Bodenrichtwerte 1997 ",
+        "target_url": "https://geo.sv.rostock.de/download/opendata/bodenrichtwerte_1997/bodenrichtwerte_1997.json"
+    },
+    {
+        "description": "Bildungstr\u00e4ger ",
+        "target_url": "https://geo.sv.rostock.de/download/opendata/bildungstraeger/bildungstraeger.json"
+    },
+    {
+        "description": "Wissenschaftliche Einrichtungen ",
+        "target_url": "https://geo.sv.rostock.de/download/opendata/wissenschaftliche_einrichtungen/wissenschaftliche_einrichtungen.json"
+    },
+    {
+        "description": "GEOJSON-Format Koordinatensystem: World Geodetic System 1984 (WGS 84)",
+        "target_url": "http://data.geoportal-wesel.de/OPENDATA/oeff_toiletten/oeff_toiletten.geojson"
+    },
+    {
+        "description": "Realnutzungskartierung 2014 ",
+        "target_url": "https://geo.sv.rostock.de/download/opendata/realnutzungskartierung_2014/realnutzungskartierung_2014.json"
+    },
+    {
+        "description": "Blutspendeeinrichtungen ",
+        "target_url": "https://geo.sv.rostock.de/download/opendata/blutspendeeinrichtungen/blutspendeeinrichtungen.json"
+    },
+    {
+        "description": "Statistische Bl\u00f6cke ",
+        "target_url": "https://geo.sv.rostock.de/download/opendata/statistische_bloecke/statistische_bloecke.json"
+    },
+    {
+        "description": "Parkm\u00f6glichkeiten ",
+        "target_url": "https://geo.sv.rostock.de/download/opendata/parkmoeglichkeiten/parkmoeglichkeiten.json"
+    },
+    {
+        "description": "Strandabschnitte (Bl\u00f6cke) ",
+        "target_url": "https://geo.sv.rostock.de/download/opendata/strandabschnitte/strandabschnitte.json"
+    },
+    {
+        "description": "\u00c4rzteh\u00e4user ",
+        "target_url": "https://geo.sv.rostock.de/download/opendata/aerztehaeuser/aerztehaeuser.json"
+    },
+    {
+        "description": "Bodenrichtwerte 2005 ",
+        "target_url": "https://geo.sv.rostock.de/download/opendata/bodenrichtwerte_2005/bodenrichtwerte_2005.json"
+    },
+    {
+        "description": "Statistische Bezirke ",
+        "target_url": "https://geo.sv.rostock.de/download/opendata/statistische_bezirke/statistische_bezirke.json"
+    },
+    {
+        "description": "Feuerwachen ",
+        "target_url": "https://geo.sv.rostock.de/download/opendata/feuerwachen/feuerwachen.json"
+    },
+    {
+        "description": "GEOJSON-Format Koordinatensystem: World Geodetic System 1984 (WGS 84)",
+        "target_url": "http://data.geoportal-wesel.de/OPENDATA/Schulen/Schulen.geojson"
+    },
+    {
+        "description": "Fair Trade ",
+        "target_url": "https://geo.sv.rostock.de/download/opendata/fair-trade/fair-trade.json"
+    },
+    {
+        "description": "Drogerien ",
+        "target_url": "https://geo.sv.rostock.de/download/opendata/drogerien/drogerien.json"
+    },
+    {
+        "description": "Bewohnerparkgebiete ",
+        "target_url": "https://geo.sv.rostock.de/download/opendata/bewohnerparkgebiete/bewohnerparkgebiete.json"
+    },
+    {
+        "description": "Geldautomaten ",
+        "target_url": "https://geo.sv.rostock.de/download/opendata/geldautomaten/geldautomaten.json"
+    },
+    {
+        "description": "H\u00f6rger\u00e4teakustiker ",
+        "target_url": "https://geo.sv.rostock.de/download/opendata/hoergeraeteakustiker/hoergeraeteakustiker.json"
+    },
+    {
+        "description": "Parkautomaten ",
+        "target_url": "https://geo.sv.rostock.de/download/opendata/parkautomaten/parkautomaten.json"
+    },
+    {
+        "description": " Standorte der Wertstoffcontainer im Stadtgebiet, Stand Januar 2017",
+        "target_url": "https://opendata.meerbusch.de/dataset/3305982b-5a74-4bec-9248-cf4d922e8a1f/resource/eb4a386a-1a2e-49d9-996f-265a3bbee079/download/wertstoffcontainer.geojson"
+    },
+    {
+        "description": "Universit\u00e4t ",
+        "target_url": "https://geo.sv.rostock.de/download/opendata/universitaet/universitaet.json"
+    },
+    {
+        "description": "Stra\u00dfen ",
+        "target_url": "https://geo.sv.rostock.de/download/opendata/strassen/strassen.json"
+    },
+    {
+        "description": "Kindertagespflegeeinrichtungen ",
+        "target_url": "https://geo.sv.rostock.de/download/opendata/kindertagespflegeeinrichtungen/kindertagespflegeeinrichtungen.json"
+    },
+    {
+        "description": "Sehensw\u00fcrdigkeiten ",
+        "target_url": "https://geo.sv.rostock.de/download/opendata/sehenswuerdigkeiten/sehenswuerdigkeiten.json"
+    },
+    {
+        "description": "B\u00e4ume ",
+        "target_url": "https://geo.sv.rostock.de/download/opendata/baeume/baeume.json"
+    },
+    {
+        "description": "Vereine ",
+        "target_url": "https://geo.sv.rostock.de/download/opendata/vereine/vereine.json"
+    },
+    {
+        "description": "Papiercontainer ",
+        "target_url": "https://geo.sv.rostock.de/download/opendata/papiercontainer/papiercontainer.json"
+    },
+    {
+        "description": "Denkmale ",
+        "target_url": "https://geo.sv.rostock.de/download/opendata/denkmale/denkmale.json"
+    },
+    {
+        "description": "Abstimmungsr\u00e4ume des Volksentscheides 2015 Diese Ressource umfasst die Standorte der amtlichen Abstimmungsr\u00e4ume des Volksentscheides 2015 in der Hanse- und Universit\u00e4tsstadt Rostock vom 06.09.2015 mit Informationen zu Adresse, Stimmbezirksnummer(n), Lokalit\u00e4t und Barrierefreiheit.",
+        "target_url": "https://geo.sv.rostock.de/download/opendata/volksentscheid_2015/volksentscheid_2015_abstimmungsraeume.json"
+    },
+    {
+        "description": "Glascontainer ",
+        "target_url": "https://geo.sv.rostock.de/download/opendata/glascontainer/glascontainer.json"
+    },
+    {
+        "description": "Gemarkungen ",
+        "target_url": "https://geo.sv.rostock.de/download/opendata/gemarkungen/gemarkungen.json"
+    },
+    {
+        "description": "Begegnungszentren ",
+        "target_url": "https://geo.sv.rostock.de/download/opendata/begegnungszentren/begegnungszentren.json"
+    },
+    {
+        "description": "Kleingartenanlagen ",
+        "target_url": "https://geo.sv.rostock.de/download/opendata/kleingartenanlagen/kleingartenanlagen.json"
+    },
+    {
+        "description": "Gemeindeverb\u00e4nde (\u00c4mter) und gemeindeverbandsfreie (amtsfreie) Kommunen Mecklenburg-Vorpommern ",
+        "target_url": "https://geo.sv.rostock.de/download/opendata/gemeindeverbaende_mecklenburg-vorpommern/gemeindeverbaende_mecklenburg-vorpommern.json"
+    },
+    {
+        "description": "Tanzschulen ",
+        "target_url": "https://geo.sv.rostock.de/download/opendata/tanzschulen/tanzschulen.json"
+    },
+    {
+        "description": "Postleitzahlengebiete Mecklenburg-Vorpommern ",
+        "target_url": "https://geo.sv.rostock.de/download/opendata/postleitzahlengebiete_mecklenburg-vorpommern/postleitzahlengebiete_mecklenburg-vorpommern.json"
+    },
+    {
+        "description": "B\u00e4nke ",
+        "target_url": "https://geo.sv.rostock.de/download/opendata/baenke/baenke.json"
+    },
+    {
+        "description": "Musikschulen ",
+        "target_url": "https://geo.sv.rostock.de/download/opendata/musikschulen/musikschulen.json"
+    },
+    {
+        "description": "Rettungswachen ",
+        "target_url": "https://geo.sv.rostock.de/download/opendata/rettungswachen/rettungswachen.json"
+    },
+    {
+        "description": "Schulen (Punktdaten) ",
+        "target_url": "https://www.offenesdatenportal.de/dataset/630ad487-2060-435c-80ec-3b3ef4c8cff0/resource/41d4c1a7-b053-452b-a909-b021f31b353f/download/schulenmoerswgs84.geojson"
+    },
+    {
+        "description": "Apotheken ",
+        "target_url": "https://geo.sv.rostock.de/download/opendata/apotheken/apotheken.json"
+    },
+    {
+        "description": "Bodenrichtwerte 2008 ",
+        "target_url": "https://geo.sv.rostock.de/download/opendata/bodenrichtwerte_2008/bodenrichtwerte_2008.json"
+    },
+    {
+        "description": "Beh\u00f6rden (kommunal) ",
+        "target_url": "https://geo.sv.rostock.de/download/opendata/behoerden-kommunal/behoerden-kommunal.json"
+    },
+    {
+        "description": "Realnutzungskartierung 2002 ",
+        "target_url": "https://geo.sv.rostock.de/download/opendata/realnutzungskartierung_2002/realnutzungskartierung_2002.json"
+    },
+    {
+        "description": "Fahrradabstellanlagen ",
+        "target_url": "https://geo.sv.rostock.de/download/opendata/fahrradabstellanlagen/fahrradabstellanlagen.json"
+    },
+    {
+        "description": "Leuchten ",
+        "target_url": "https://geo.sv.rostock.de/download/opendata/leuchten/leuchten.json"
+    },
+    {
+        "description": "Fluren ",
+        "target_url": "https://geo.sv.rostock.de/download/opendata/fluren/fluren.json"
+    },
+    {
+        "description": "Postbriefk\u00e4sten ",
+        "target_url": "https://geo.sv.rostock.de/download/opendata/postbriefkaesten/postbriefkaesten.json"
+    },
+    {
+        "description": "Bodenwertzonen 1999 ",
+        "target_url": "https://geo.sv.rostock.de/download/opendata/bodenwertzonen_1999/bodenwertzonen_1999.json"
+    },
+    {
+        "description": "Gastst\u00e4tten ",
+        "target_url": "https://geo.sv.rostock.de/download/opendata/gaststaetten/gaststaetten.json"
+    },
+    {
+        "description": " <p>GEOJSON-Datei der D\u00fcsseldorfer Rheinbr\u00fccken</p>\n",
+        "target_url": "https://opendata.duesseldorf.de/sites/default/files/Die%20D%C3%BCsseldorfer%20Rheinbr%C3%BCcken.geojson"
+    },
+    {
+        "description": "Baudenkmale und Denkmalbereiche ",
+        "target_url": "https://geo.sv.rostock.de/download/opendata/baudenkmale_denkmalbereiche/baudenkmale_denkmalbereiche.json"
+    },
+    {
+        "description": "Strand-POI ",
+        "target_url": "https://geo.sv.rostock.de/download/opendata/strand-poi/strand-poi.json"
+    },
+    {
+        "description": "B\u00fchnen und Theater ",
+        "target_url": "https://geo.sv.rostock.de/download/opendata/buehnen_theater/buehnen_theater.json"
+    },
+    {
+        "description": "Strand-Rettungst\u00fcrme ",
+        "target_url": "https://geo.sv.rostock.de/download/opendata/strand-rettungstuerme/strand-rettungstuerme.json"
+    },
+    {
+        "description": "GEOJSON-Format Koordinatensystem: World Geodetic System 1984 (WGS 84) ",
+        "target_url": "http://data.geoportal-wesel.de/OPENDATA/Jugendeinrichtung/Jugendeinrichtung.geojson"
+    },
+    {
+        "description": "Solarpotential 2013 (Photovoltaik) Diese Ressource umfasst die Dachfl\u00e4chen in der Hanse- und Universit\u00e4tsstadt Rostock des Jahres 2013 mit Informationen zu Dachart, Azimut, Neigung, Gesamtfl\u00e4che in der Einheit Quadratmeter, f\u00fcr Photovoltaik sehr gut geeignetem Fl\u00e4chenanteil in der Einheit Quadratmeter, Energiepotential des f\u00fcr Photovoltaik sehr gut geeigneten Fl\u00e4chenanteils in der Einheit Kilowattstunden je Quadratmeter und Jahr, Gesamtenergiepotential des f\u00fcr Photovoltaik sehr gut geeigneten Fl\u00e4chenanteils in der Einheit Kilowattstunden je Jahr, f\u00fcr Photovoltaik gut geeignetem Fl\u00e4chenanteil in der Einheit Quadratmeter, Energiepotential des f\u00fcr Photovoltaik gut geeigneten Fl\u00e4chenanteils in der Einheit Kilowattstunden je Quadratmeter und Jahr, Gesamtenergiepotential des f\u00fcr Photovoltaik gut geeigneten Fl\u00e4chenanteils in der Einheit Kilowattstunden je Jahr, f\u00fcr Photovoltaik bedingt geeignetem Fl\u00e4chenanteil in der Einheit Quadratmeter, Energiepotential des f\u00fcr Photovoltaik bedingt geeigneten Fl\u00e4chenanteils in der Einheit Kilowattstunden je Quadratmeter und Jahr und Gesamtenergiepotential des f\u00fcr Photovoltaik bedingt geeigneten Fl\u00e4chenanteils in der Einheit Kilowattstunden je Jahr.",
+        "target_url": "https://geo.sv.rostock.de/download/opendata/solarpotential_2013/solarpotential_2013_photovoltaik.json"
+    },
+    {
+        "description": "Fitnessstudios ",
+        "target_url": "https://geo.sv.rostock.de/download/opendata/fitnessstudios/fitnessstudios.json"
+    },
+    {
+        "description": "GEOJSON-Format Koordinatensystem: World Geodetic System 1984 (WGS 84) ",
+        "target_url": "https://data.geoportal-wesel.de/OPENDATA/Still_Wickel/still_wickel.geojson"
+    },
+    {
+        "description": "Krankenkassen ",
+        "target_url": "https://geo.sv.rostock.de/download/opendata/krankenkassen/krankenkassen.json"
+    },
+    {
+        "description": "GEOJSON-Format Koordinatensystem: World Geodetic System 1984 (WGS 84) ",
+        "target_url": "http://data.geoportal-wesel.de/OPENDATA/Gedenkstaetten/Gedenkstaetten.geojson"
+    },
+    {
+        "description": "Kinder- und Jugendbetreuung ",
+        "target_url": "https://geo.sv.rostock.de/download/opendata/kinder_jugendbetreuung/kinder_jugendbetreuung.json"
+    },
+    {
+        "description": "Ortsteile ",
+        "target_url": "https://geo.sv.rostock.de/download/opendata/ortsteile/ortsteile.json"
+    },
+    {
+        "description": "GEOJSON-Format Koordinatensystem: World Geodetic System 1984 (WGS 84) ",
+        "target_url": "http://data.geoportal-wesel.de/OPENDATA/Sehenswuerdigkeiten/Sehenswuerdigkeiten.geojson"
+    },
+    {
+        "description": "GEOJSON-Format Koordinatensystem: World Geodetic System 1984 (WGS 84)",
+        "target_url": "http://data.geoportal-wesel.de/OPENDATA/Sportstaetten/Sportstaetten.geojson"
+    },
+    {
+        "description": "Erhaltungssatzungen (Geltungsbereiche) ",
+        "target_url": "https://geo.sv.rostock.de/download/opendata/erhaltungssatzungen-geltungsbereiche/erhaltungssatzungen-geltungsbereiche.json"
+    },
+    {
+        "description": "Windenergieanlagen ",
+        "target_url": "https://geo.sv.rostock.de/download/opendata/windenergieanlagen/windenergieanlagen.json"
+    },
+    {
+        "description": "Standorte der Radmonitore Diese Ressource umfasst die Standorte der Radmonitore in der Hanse- und Universit\u00e4tsstadt Rostock mit Informationen zu Adresse, ID, Bezeichnung und Kontaktdaten.",
+        "target_url": "https://geo.sv.rostock.de/download/opendata/radmonitore/radmonitore_standorte.json"
+    },
+    {
+        "description": "B\u00e4ckereien ",
+        "target_url": "https://geo.sv.rostock.de/download/opendata/baeckereien/baeckereien.json"
+    },
+    {
+        "description": "Abfallbeh\u00e4lter ",
+        "target_url": "https://geo.sv.rostock.de/download/opendata/abfallbehaelter/abfallbehaelter.json"
+    },
+    {
+        "description": "Schiffsliegepl\u00e4tze ",
+        "target_url": "https://geo.sv.rostock.de/download/opendata/schiffsliegeplaetze/schiffsliegeplaetze.json"
+    },
+    {
+        "description": "Bodenrichtwerte 2012 ",
+        "target_url": "https://geo.sv.rostock.de/download/opendata/bodenrichtwerte_2012/bodenrichtwerte_2012.json"
+    },
+    {
+        "description": "Superm\u00e4rkte ",
+        "target_url": "https://geo.sv.rostock.de/download/opendata/supermaerkte/supermaerkte.json"
+    },
+    {
+        "description": "Feldsportanlagen ",
+        "target_url": "https://geo.sv.rostock.de/download/opendata/feldsportanlagen/feldsportanlagen.json"
+    },
+    {
+        "description": "Denkm\u00e4ler (Fl\u00e4chendaten) Der Datensatz enth\u00e4lt die Geodaten (Fl\u00e4chendaten in WGS 84 ) zu den Denkm\u00e4lern in Moers.",
+        "target_url": "https://www.offenesdatenportal.de/dataset/9be08f4f-488c-4ee0-829d-9d2d9bae687a/resource/0e02a364-a2cb-4219-8bdc-de3ebf74fdb3/download/denkmale-flaechen-geo.geojson"
+    },
+    {
+        "description": "Solarpotential 2011 (Photovoltaik) Diese Ressource umfasst die Dachfl\u00e4chen in der Hanse- und Universit\u00e4tsstadt Rostock des Jahres 2011 mit Informationen zu Dachart, Azimut, Neigung, Fl\u00e4che in der Einheit Quadratmeter, Photovoltaik-Eignungsklasse (1: nicht geeignet, 2: geeignet, 3: gut geeignet), Energiepotential in der Einheit Kilowattstunden je Quadratmeter und Jahr und Energiepotential in der Einheit Kilowattstunden je Jahr.",
+        "target_url": "https://geo.sv.rostock.de/download/opendata/solarpotential_2011/solarpotential_2011_photovoltaik.json"
+    },
+    {
+        "description": "Wassersportanlagen ",
+        "target_url": "https://geo.sv.rostock.de/download/opendata/wassersportanlagen/wassersportanlagen.json"
+    },
+    {
+        "description": "Kunst im \u00f6ffentlichen Raum ",
+        "target_url": "https://geo.sv.rostock.de/download/opendata/kunst_im_oeffentlichen_raum/kunst_im_oeffentlichen_raum.json"
+    },
+    {
+        "description": "Bodenleitwerte 1993 ",
+        "target_url": "https://geo.sv.rostock.de/download/opendata/bodenleitwerte_1993/bodenleitwerte_1993.json"
+    },
+    {
+        "description": "Schulen ",
+        "target_url": "https://geo.sv.rostock.de/download/opendata/schulen/schulen.json"
+    },
+    {
+        "description": "Parkanlagen ",
+        "target_url": "https://geo.sv.rostock.de/download/opendata/parkanlagen/parkanlagen.json"
+    },
+    {
+        "description": "Stadtbereiche ",
+        "target_url": "https://geo.sv.rostock.de/download/opendata/stadtbereiche/stadtbereiche.json"
+    },
+    {
+        "description": "Toiletten ",
+        "target_url": "https://geo.sv.rostock.de/download/opendata/toiletten/toiletten.json"
+    },
+    {
+        "description": "Ortsamtsbereiche ",
+        "target_url": "https://geo.sv.rostock.de/download/opendata/ortsamtsbereiche/ortsamtsbereiche.json"
+    },
+    {
+        "description": "Taxist\u00e4nde ",
+        "target_url": "https://geo.sv.rostock.de/download/opendata/taxistaende/taxistaende.json"
+    },
+    {
+        "description": "Museen ",
+        "target_url": "https://geo.sv.rostock.de/download/opendata/museen/museen.json"
+    },
+    {
+        "description": "Galerien ",
+        "target_url": "https://geo.sv.rostock.de/download/opendata/galerien/galerien.json"
+    },
+    {
+        "description": "Naturdenkmale ",
+        "target_url": "https://geo.sv.rostock.de/download/opendata/naturdenkmale/naturdenkmale.json"
+    },
+    {
+        "description": "Bebauungspl\u00e4ne (Geltungsbereiche) ",
+        "target_url": "https://geo.sv.rostock.de/download/opendata/bebauungsplaene-geltungsbereiche/bebauungsplaene-geltungsbereiche.json"
+    },
+    {
+        "description": "Wochenm\u00e4rkte ",
+        "target_url": "https://geo.sv.rostock.de/download/opendata/wochenmaerkte/wochenmaerkte.json"
+    },
+    {
+        "description": "Realnutzungskartierung 2007 ",
+        "target_url": "https://geo.sv.rostock.de/download/opendata/realnutzungskartierung_2007/realnutzungskartierung_2007.json"
+    },
+    {
+        "description": "Mobilfunkantennen ",
+        "target_url": "https://geo.sv.rostock.de/download/opendata/mobilfunkantennen/mobilfunkantennen.json"
+    },
+    {
+        "description": "Beh\u00f6rden (nicht-kommunal) ",
+        "target_url": "https://geo.sv.rostock.de/download/opendata/behoerden-nicht-kommunal/behoerden-nicht-kommunal.json"
+    },
+    {
+        "description": "Bodenrichtwerte 2011 ",
+        "target_url": "https://geo.sv.rostock.de/download/opendata/bodenrichtwerte_2011/bodenrichtwerte_2011.json"
+    },
+    {
+        "description": "Bodenrichtwerte 2015 ",
+        "target_url": "https://geo.sv.rostock.de/download/opendata/bodenrichtwerte_2015/bodenrichtwerte_2015.json"
+    },
+    {
+        "description": "Historische Gew\u00e4sserl\u00e4ufe ",
+        "target_url": "https://geo.sv.rostock.de/download/opendata/historische_gewaesserlaeufe/historische_gewaesserlaeufe.json"
+    },
+    {
+        "description": "Bodenrichtwerte 1995 ",
+        "target_url": "https://geo.sv.rostock.de/download/opendata/bodenrichtwerte_1995/bodenrichtwerte_1995.json"
+    },
+    {
+        "description": "Leuchtenschalteinrichtungen ",
+        "target_url": "https://geo.sv.rostock.de/download/opendata/leuchtenschalteinrichtungen/leuchtenschalteinrichtungen.json"
+    },
+    {
+        "description": "Musikclubs ",
+        "target_url": "https://geo.sv.rostock.de/download/opendata/musikclubs/musikclubs.json"
+    },
+    {
+        "description": "Denkm\u00e4ler (Liniendaten) Der Datensatz enth\u00e4lt die Geodaten (Liniendaten in WGS 84 ) zu den Denkm\u00e4lern in Moers.",
+        "target_url": "https://www.offenesdatenportal.de/dataset/c62a3583-9d43-4117-8dd1-803b7b2a34f4/resource/0cac9e0a-52f3-483f-b0c8-25a8a98a47ce/download/denkmale-linien-geo.geojson"
+    },
+    {
+        "description": "GEOJSON-Format Koordinatensystem: World Geodetic System 1984 (WGS 84)",
+        "target_url": "http://data.geoportal-wesel.de/OPENDATA/Hundekottuete/Hundekottuete.geojson"
+    },
+    {
+        "description": "Banken ",
+        "target_url": "https://geo.sv.rostock.de/download/opendata/banken/banken.json"
+    },
+    {
+        "description": "Brunnen ",
+        "target_url": "https://geo.sv.rostock.de/download/opendata/brunnen/brunnen.json"
+    },
+    {
+        "description": "Bodenrichtwerte 2001 ",
+        "target_url": "https://geo.sv.rostock.de/download/opendata/bodenrichtwerte_2001/bodenrichtwerte_2001.json"
+    },
+    {
+        "description": "Pedelec-Verleihstationen ",
+        "target_url": "https://geo.sv.rostock.de/download/opendata/pedelec_verleihstationen/pedelec_verleihstationen.json"
+    },
+    {
+        "description": "Flie\u00dfgew\u00e4sser ",
+        "target_url": "https://geo.sv.rostock.de/download/opendata/fliessgewaesser/fliessgewaesser.json"
+    },
+    {
+        "description": "Sporthallen ",
+        "target_url": "https://geo.sv.rostock.de/download/opendata/sporthallen/sporthallen.json"
+    },
+    {
+        "description": "Fahrradl\u00e4den ",
+        "target_url": "https://geo.sv.rostock.de/download/opendata/fahrradlaeden/fahrradlaeden.json"
+    },
+    {
+        "description": "Poststellen ",
+        "target_url": "https://geo.sv.rostock.de/download/opendata/poststellen/poststellen.json"
+    },
+    {
+        "description": "Bodenrichtwerte 2002 ",
+        "target_url": "https://geo.sv.rostock.de/download/opendata/bodenrichtwerte_2002/bodenrichtwerte_2002.json"
+    },
+    {
+        "description": "Bodenrichtwerte 2007 ",
+        "target_url": "https://geo.sv.rostock.de/download/opendata/bodenrichtwerte_2007/bodenrichtwerte_2007.json"
+    },
+    {
+        "description": "Sanit\u00e4tsh\u00e4user ",
+        "target_url": "https://geo.sv.rostock.de/download/opendata/sanitaetshaeuser/sanitaetshaeuser.json"
+    },
+    {
+        "description": "Bodenleitwerte 1991 ",
+        "target_url": "https://geo.sv.rostock.de/download/opendata/bodenleitwerte_1991/bodenleitwerte_1991.json"
+    },
+    {
+        "description": "Geografische Bezeichnungen ",
+        "target_url": "https://geo.sv.rostock.de/download/opendata/geografische_bezeichnungen/geografische_bezeichnungen.json"
+    },
+    {
+        "description": "GEOJSON-Format Koordinatensystem: World Geodetic System 1984 (WGS 84) ",
+        "target_url": "http://data.geoportal-wesel.de/OPENDATA/Kindertageseinrichtung/Kindertageseinrichtung.geojson"
+    },
+    {
+        "description": "Kinos ",
+        "target_url": "https://geo.sv.rostock.de/download/opendata/kinos/kinos.json"
+    },
+    {
+        "description": "Hundetoiletten ",
+        "target_url": "https://geo.sv.rostock.de/download/opendata/hundetoiletten/hundetoiletten.json"
+    },
+    {
+        "description": "Sozialatlasbezirke Die GeoJson-Datei enth\u00e4lt die Sozialatlasbezirke.",
+        "target_url": "https://www.offenesdatenportal.de/dataset/d9c8e261-ffde-4faf-b3a6-c9d84ceca19f/resource/5d6551f0-086e-44b7-a0fe-7d9e30ab7175/download/sozialatlasbezirke.geojson"
+    },
+    {
+        "description": "Lichtsignalanlagen ",
+        "target_url": "https://geo.sv.rostock.de/download/opendata/lichtsignalanlagen/lichtsignalanlagen.json"
+    },
+    {
+        "description": "Ortsbeiratsbereiche ",
+        "target_url": "https://geo.sv.rostock.de/download/opendata/ortsbeiratsbereiche/ortsbeiratsbereiche.json"
+    },
+    {
+        "description": "GEOJSON-Format Koordinatensystem: World Geodetic System 1984 (WGS 84)",
+        "target_url": "http://data.geoportal-wesel.de/OPENDATA/Spielplaetze/Spielplaetze.geojson"
+    },
+    {
+        "description": "Kinderbetreuungseinrichtungen ",
+        "target_url": "https://geo.sv.rostock.de/download/opendata/kinderbetreuungseinrichtungen/kinderbetreuungseinrichtungen.json"
+    },
+    {
+        "description": "Strandzug\u00e4nge ",
+        "target_url": "https://geo.sv.rostock.de/download/opendata/strandzugaenge/strandzugaenge.json"
+    },
+    {
+        "description": "Landkreise und kreisfreie St\u00e4dte Mecklenburg-Vorpommern ",
+        "target_url": "https://geo.sv.rostock.de/download/opendata/kreise_mecklenburg-vorpommern/kreise_mecklenburg-vorpommern.json"
+    },
+    {
+        "description": "Klarschiff.HRO-Meldungen ",
+        "target_url": "https://geo.sv.rostock.de/download/opendata/klarschiffhro-meldungen/klarschiffhro-meldungen.json"
+    },
+    {
+        "description": "Altkleidercontainer ",
+        "target_url": "https://geo.sv.rostock.de/download/opendata/altkleidercontainer/altkleidercontainer.json"
+    },
+    {
+        "description": "GEOJSON-Format Koordinatensystem: World Geodetic System 1984 (WGS 84) ",
+        "target_url": "http://data.geoportal-wesel.de/OPENDATA/Stolpersteine/Stolpersteine.geojson"
+    },
+    {
+        "description": "Augenoptiker ",
+        "target_url": "https://geo.sv.rostock.de/download/opendata/augenoptiker/augenoptiker.json"
+    },
+    {
+        "description": "Touristeninformationsb\u00fcros ",
+        "target_url": "https://geo.sv.rostock.de/download/opendata/touristeninformationsbueros/touristeninformationsbueros.json"
+    },
+    {
+        "description": "Behinderteneinrichtungen ",
+        "target_url": "https://geo.sv.rostock.de/download/opendata/behinderteneinrichtungen/behinderteneinrichtungen.json"
+    },
+    {
+        "description": "Bau- und Gartenm\u00e4rkte ",
+        "target_url": "https://geo.sv.rostock.de/download/opendata/bau_gartenmaerkte/bau_gartenmaerkte.json"
+    },
+    {
+        "description": "Paketautomaten ",
+        "target_url": "https://geo.sv.rostock.de/download/opendata/paketautomaten/paketautomaten.json"
+    },
+    {
+        "description": "Pflegeeinrichtungen ",
+        "target_url": "https://geo.sv.rostock.de/download/opendata/pflegeeinrichtungen/pflegeeinrichtungen.json"
+    },
+    {
+        "description": "Friedh\u00f6fe ",
+        "target_url": "https://geo.sv.rostock.de/download/opendata/friedhoefe/friedhoefe.json"
+    },
+    {
+        "description": "Sanierungsgebiete ",
+        "target_url": "https://geo.sv.rostock.de/download/opendata/sanierungsgebiete/sanierungsgebiete.json"
+    },
+    {
+        "description": " <p>GEOJSON-Datei der D\u00fcsseldorfer Museen</p>\n",
+        "target_url": "https://opendata.duesseldorf.de/sites/default/files/D%C3%BCsseldorfer%20Museen_0.geojson"
+    },
+    {
+        "description": "Hospize ",
+        "target_url": "https://geo.sv.rostock.de/download/opendata/hospize/hospize.json"
+    },
+    {
+        "description": "Recyclingh\u00f6fe ",
+        "target_url": "https://geo.sv.rostock.de/download/opendata/recyclinghoefe/recyclinghoefe.json"
+    },
+    {
+        "description": "Kliniken ",
+        "target_url": "https://geo.sv.rostock.de/download/opendata/kliniken/kliniken.json"
+    },
+    {
+        "description": "Bodenrichtwerte 2009 ",
+        "target_url": "https://geo.sv.rostock.de/download/opendata/bodenrichtwerte_2009/bodenrichtwerte_2009.json"
+    },
+    {
+        "description": "Unterk\u00fcnfte ",
+        "target_url": "https://geo.sv.rostock.de/download/opendata/unterkuenfte/unterkuenfte.json"
+    },
+    {
+        "description": "Sozialkaufh\u00e4user und Umsonstl\u00e4den ",
+        "target_url": "https://geo.sv.rostock.de/download/opendata/sozialkaufhaeuser_umsonstlaeden/sozialkaufhaeuser_umsonstlaeden.json"
+    },
+    {
+        "description": "Tankstellen ",
+        "target_url": "https://geo.sv.rostock.de/download/opendata/tankstellen/tankstellen.json"
+    },
+    {
+        "description": "Baustellen ",
+        "target_url": "https://geo.sv.rostock.de/download/opendata/baustellen/baustellen.json"
+    },
+    {
+        "description": "Gemeindefl\u00e4che ",
+        "target_url": "https://geo.sv.rostock.de/download/opendata/gemeindeflaeche/gemeindeflaeche.json"
+    },
+    {
+        "description": "Bodenrichtwerte 2017 ",
+        "target_url": "https://geo.sv.rostock.de/download/opendata/bodenrichtwerte_2017/bodenrichtwerte_2017.json"
+    },
+    {
+        "description": "Haltestellen ",
+        "target_url": "https://geo.sv.rostock.de/download/opendata/haltestellen/haltestellen.json"
+    },
+    {
+        "description": "Stadt-Land-Fluss Route ",
+        "target_url": "https://opendata.meerbusch.de/dataset/00a60ffd-55f5-4a39-93c5-6bfef2e9c410/resource/4aac254f-5972-4ead-b567-fc7f73bd9788/download/stadtlandflussrouteneu.geojson"
+    },
+    {
+        "description": "Schutzh\u00fctten (GeoJSON)  GeoJSON ist ein offenes Format um geografische Daten nach der Simple-Feature-Access-Spezifikation zu definieren.",
+        "target_url": "http://www.geodaten1.aachen.de/opendata/wandern/ows?&service=WFS&request=getfeature&typename=schutzhuetten&outputformat=application/json"
+    },
+    {
+        "description": " <p>GEOJSON-Datei der D\u00fcsseldorfer Bibliotheken</p>\n",
+        "target_url": "https://opendata.duesseldorf.de/sites/default/files/D%C3%BCsseldorfer%20Bibliotheken.geojson"
+    },
+    {
+        "description": "Rettungspunkte (GeoJSON)  GeoJSON ist ein offenes Format um geografische Daten nach der Simple-Feature-Access-Spezifikation zu definieren. ",
+        "target_url": "http://www.geodaten1.aachen.de/opendata/wandern/ows?&service=WFS&request=getfeature&typename=rettungspunkte&outputformat=application/json"
+    },
+    {
+        "description": "UTM-Gitter 1x1km Texte Der Datensatz enth\u00e4lt die Texte der UTM-Gitter mit einer Rasterweite von 1x1 Kilometer im Format GeoJSON. Hierbei handelt es ich um Punktobjekte. Die Koordinaten beziehen sich auf die linke untere Ecke der UTM-Gitter.\r\nDie Bezeichnungen (Texte) stehen \u00fcber eine attributive Abfrage der Geometriedaten zur Verf\u00fcgung.",
+        "target_url": "http://offenedaten.kreis-kleve.de/files/Fachbereich_6/gisverb/UTM_Gitter/TEXTE_1X1KM_UTM.json"
+    },
+    {
+        "description": " <p>Die Standorte der Schulen der Landeshauptsstadt D\u00fcsseldorf.</p>\n\n<p>Die Datei enth\u00e4lt folgende Informationen:</p>\n\n<ul><li>Latitude</li>\n\t<li>Longitude</li>\n\t<li>Altitude</li>\n\t<li>Geometry</li>\n\t<li>Name der Schule</li>\n\t<li>Anschrift</li>\n\t<li>Beschreibung (Stadtteil, Schulform, Schultr\u00e4ger)</li>\n</ul><p>\u00a0</p>\n",
+        "target_url": "https://opendata.duesseldorf.de/sites/default/files/Schulen%20in%20D%C3%BCsseldorf_0.geojson"
+    },
+    {
+        "description": "Knotenpunkte (GeoJSON)  GeoJSON ist ein offenes Format um geografische Daten nach der Simple-Feature-Access-Spezifikation zu definieren.",
+        "target_url": "http://www.geodaten1.aachen.de/opendata/wandern/ows?&service=WFS&request=getfeature&typename=knotenpunkte&outputformat=application/json"
+    },
+    {
+        "description": " <p>GEOJSON-Datei der Radstationen</p>\n",
+        "target_url": "https://opendata.duesseldorf.de/sites/default/files/Radstationen_0.geojson"
+    },
+    {
+        "description": "Wahllokale der Oberb\u00fcrgermeisterwahl 2012 Diese Ressource umfasst die Standorte der amtlichen Wahllokale der Oberb\u00fcrgermeisterwahl 2012 in der Hanse- und Universit\u00e4tsstadt Rostock vom 05.02.2012 mit Informationen zu Adresse, Wahlbezirksnummer(n), Lokalit\u00e4t und Barrierefreiheit.",
+        "target_url": "https://geo.sv.rostock.de/download/opendata/oberbuergermeisterwahl_2012/oberbuergermeisterwahl_2012_wahllokale.json"
+    },
+    {
+        "description": "Wahllokale der Bundestagswahl 2017 Diese Ressource umfasst die Standorte der amtlichen Wahllokale der Bundestagswahl 2017 in der Hanse- und Universit\u00e4tsstadt Rostock vom 24.09.2017 mit Informationen zu Adresse, Wahlbezirksnummer(n), Lokalit\u00e4t und Barrierefreiheit.",
+        "target_url": "https://geo.sv.rostock.de/download/opendata/bundestagswahl_2017/bundestagswahl_2017_wahllokale.json"
+    },
+    {
+        "description": "Wahllokale der B\u00fcrgerschaftswahl 2014 Diese Ressource umfasst die Standorte der amtlichen Wahllokale der B\u00fcrgerschaftswahl 2014 in der Hanse- und Universit\u00e4tsstadt Rostock vom 25.05.2014 mit Informationen zu Adresse, Wahlbezirksnummer(n), Lokalit\u00e4t und Barrierefreiheit.",
+        "target_url": "https://geo.sv.rostock.de/download/opendata/buergerschaftswahl_2014/buergerschaftswahl_2014_wahllokale.json"
+    },
+    {
+        "description": "Wahllokale der Landtagswahl 2006 Diese Ressource umfasst die Standorte der amtlichen Wahllokale der Landtagswahl 2006 in der Hanse- und Universit\u00e4tsstadt Rostock vom 17.09.2006 mit Informationen zu Wahlbezirksnummer(n).",
+        "target_url": "https://geo.sv.rostock.de/download/opendata/landtagswahl_2006/landtagswahl_2006_wahllokale.json"
+    },
+    {
+        "description": "Wahllokale der Landtagswahl 2002 Diese Ressource umfasst die Standorte der amtlichen Wahllokale der Landtagswahl 2002 in der Hanse- und Universit\u00e4tsstadt Rostock vom 22.09.2002 mit Informationen zu Wahlbezirksnummer(n).",
+        "target_url": "https://geo.sv.rostock.de/download/opendata/landtagswahl_2002/landtagswahl_2002_wahllokale.json"
+    },
+    {
+        "description": "Wahllokale der B\u00fcrgerschaftswahl 2009 Diese Ressource umfasst die Standorte der amtlichen Wahllokale der B\u00fcrgerschaftswahl 2009 in der Hanse- und Universit\u00e4tsstadt Rostock vom 07.06.2009 mit Informationen zu Wahlbezirksnummer(n).",
+        "target_url": "https://geo.sv.rostock.de/download/opendata/buergerschaftswahl_2009/buergerschaftswahl_2009_wahllokale.json"
+    },
+    {
+        "description": "Wahllokale der Bundestagswahl 2009 Diese Ressource umfasst die Standorte der amtlichen Wahllokale der Bundestagswahl 2009 in der Hanse- und Universit\u00e4tsstadt Rostock vom 27.09.2009 mit Informationen zu Adresse, Wahlbezirksnummer(n), Lokalit\u00e4t und Barrierefreiheit.",
+        "target_url": "https://geo.sv.rostock.de/download/opendata/bundestagswahl_2009/bundestagswahl_2009_wahllokale.json"
+    },
+    {
+        "description": "Wahllokale der B\u00fcrgerschaftswahl 2004 Diese Ressource umfasst die Standorte der amtlichen Wahllokale der B\u00fcrgerschaftswahl 2004 in der Hanse- und Universit\u00e4tsstadt Rostock vom 13.06.2004 mit Informationen zu Wahlbezirksnummer(n).",
+        "target_url": "https://geo.sv.rostock.de/download/opendata/buergerschaftswahl_2004/buergerschaftswahl_2004_wahllokale.json"
+    },
+    {
+        "description": "Wahllokale der Europaparlamentswahl 2009 Diese Ressource umfasst die Standorte der amtlichen Wahllokale der Europaparlamentswahl 2009 in der Hanse- und Universit\u00e4tsstadt Rostock vom 07.06.2009 mit Informationen zu Wahlbezirksnummer(n).",
+        "target_url": "https://geo.sv.rostock.de/download/opendata/europaparlamentswahl_2009/europaparlamentswahl_2009_wahllokale.json"
+    },
+    {
+        "description": "Wahllokale der Bundestagswahl 2005 Diese Ressource umfasst die Standorte der amtlichen Wahllokale der Bundestagswahl 2005 in der Hanse- und Universit\u00e4tsstadt Rostock vom 18.09.2005 mit Informationen zu Wahlbezirksnummer(n).",
+        "target_url": "https://geo.sv.rostock.de/download/opendata/bundestagswahl_2005/bundestagswahl_2005_wahllokale.json"
+    },
+    {
+        "description": "Wahllokale der Landtagswahl 2011 Diese Ressource umfasst die Standorte der amtlichen Wahllokale der Landtagswahl 2011 in der Hanse- und Universit\u00e4tsstadt Rostock vom 04.09.2011 mit Informationen zu Adresse, Wahlbezirksnummer(n), Lokalit\u00e4t und Barrierefreiheit.",
+        "target_url": "https://geo.sv.rostock.de/download/opendata/landtagswahl_2011/landtagswahl_2011_wahllokale.json"
+    },
+    {
+        "description": "Wahllokale der Bundestagswahl 2002 Diese Ressource umfasst die Standorte der amtlichen Wahllokale der Bundestagswahl 2002 in der Hanse- und Universit\u00e4tsstadt Rostock vom 22.09.2002 mit Informationen zu Wahlbezirksnummer(n).",
+        "target_url": "https://geo.sv.rostock.de/download/opendata/bundestagswahl_2002/bundestagswahl_2002_wahllokale.json"
+    },
+    {
+        "description": "Wahllokale der Bundestagswahl 2013 Diese Ressource umfasst die Standorte der amtlichen Wahllokale der Bundestagswahl 2013 in der Hanse- und Universit\u00e4tsstadt Rostock vom 22.09.2013 mit Informationen zu Adresse, Wahlbezirksnummer(n), Lokalit\u00e4t und Barrierefreiheit.",
+        "target_url": "https://geo.sv.rostock.de/download/opendata/bundestagswahl_2013/bundestagswahl_2013_wahllokale.json"
+    },
+    {
+        "description": "Wahllokale der Europaparlamentswahl 2004 Diese Ressource umfasst die Standorte der amtlichen Wahllokale der Europaparlamentswahl 2004 in der Hanse- und Universit\u00e4tsstadt Rostock vom 13.06.2004 mit Informationen zu Wahlbezirksnummer(n).",
+        "target_url": "https://geo.sv.rostock.de/download/opendata/europaparlamentswahl_2004/europaparlamentswahl_2004_wahllokale.json"
+    },
+    {
+        "description": "Wahllokale der Landtagswahl 2016 Diese Ressource umfasst die Standorte der amtlichen Wahllokale der Landtagswahl 2016 in der Hanse- und Universit\u00e4tsstadt Rostock vom 04.09.2016 mit Informationen zu Adresse, Wahlbezirksnummer(n), Lokalit\u00e4t und Barrierefreiheit.",
+        "target_url": "https://geo.sv.rostock.de/download/opendata/landtagswahl_2016/landtagswahl_2016_wahllokale.json"
+    },
+    {
+        "description": "Wahllokale der Europaparlamentswahl 2014 Diese Ressource umfasst die Standorte der amtlichen Wahllokale der Europaparlamentswahl 2014 in der Hanse- und Universit\u00e4tsstadt Rostock vom 25.05.2014 mit Informationen zu Adresse, Wahlbezirksnummer(n), Lokalit\u00e4t und Barrierefreiheit.",
+        "target_url": "https://geo.sv.rostock.de/download/opendata/europaparlamentswahl_2014/europaparlamentswahl_2014_wahllokale.json"
+    },
+    {
+        "description": "Stimmbezirke des Volksentscheides 2015 Diese Ressource umfasst die amtlichen Stimmbezirke des Volksentscheides 2015 in der Hanse- und Universit\u00e4tsstadt Rostock vom 06.09.2015 mit Informationen zu Nummer.",
+        "target_url": "https://geo.sv.rostock.de/download/opendata/volksentscheid_2015/volksentscheid_2015_stimmbezirke.json"
+    },
+    {
+        "description": "Solarpotential 2013 (Solarthermie) Diese Ressource umfasst die Dachfl\u00e4chen in der Hanse- und Universit\u00e4tsstadt Rostock des Jahres 2013 mit Informationen zu Dachart, Azimut, Neigung, Gesamtfl\u00e4che in der Einheit Quadratmeter, f\u00fcr Solarthermie sehr gut geeignetem Fl\u00e4chenanteil in der Einheit Quadratmeter, Energiepotential des f\u00fcr Solarthermie sehr gut geeigneten Fl\u00e4chenanteils in der Einheit Kilowattstunden je Quadratmeter und Jahr und Gesamtenergiepotential des f\u00fcr Solarthermie sehr gut geeigneten Fl\u00e4chenanteils in der Einheit Kilowattstunden je Jahr.",
+        "target_url": "https://geo.sv.rostock.de/download/opendata/solarpotential_2013/solarpotential_2013_solarthermie.json"
+    },
+    {
+        "description": "Solarpotential 2011 (Solarthermie) Diese Ressource umfasst die Dachfl\u00e4chen in der Hanse- und Universit\u00e4tsstadt Rostock des Jahres 2011 mit Informationen zu Dachart, Azimut, Neigung, Fl\u00e4che in der Einheit Quadratmeter, Solarthermie-Eignungsklasse (1: nicht geeignet, 2: geeignet, 3: gut geeignet), Energiepotential in der Einheit Kilowattstunden je Quadratmeter und Jahr und Energiepotential in der Einheit Kilowattstunden je Jahr.",
+        "target_url": "https://geo.sv.rostock.de/download/opendata/solarpotential_2011/solarpotential_2011_solarthermie.json"
+    },
+    {
+        "description": " <p>GEOJSON-Datei mit den Namen, Standorten und weiteren Informationen zu den Museen in D\u00fcsseldorf</p>\n\n<p>\u00a0</p>\n",
+        "target_url": "https://opendata.duesseldorf.de/sites/default/files/D%C3%BCsseldorfer%20Museen%20erweiterte%20Info.geojson"
+    },
+    {
+        "description": "Wahlbezirke der Oberb\u00fcrgermeisterwahl 2012 Diese Ressource umfasst die amtlichen Wahlbezirke der Oberb\u00fcrgermeisterwahl 2012 in der Hanse- und Universit\u00e4tsstadt Rostock vom 05.02.2012 mit Informationen zu Nummer.",
+        "target_url": "https://geo.sv.rostock.de/download/opendata/oberbuergermeisterwahl_2012/oberbuergermeisterwahl_2012_wahlbezirke.json"
+    },
+    {
+        "description": "Wahlbezirke der Bundestagswahl 2017 Diese Ressource umfasst die amtlichen Wahlbezirke der Bundestagswahl 2017 in der Hanse- und Universit\u00e4tsstadt Rostock vom 24.09.2017 mit Informationen zu Nummer.",
+        "target_url": "https://geo.sv.rostock.de/download/opendata/bundestagswahl_2017/bundestagswahl_2017_wahlbezirke.json"
+    },
+    {
+        "description": "Wahlbezirke der B\u00fcrgerschaftswahl 2014 Diese Ressource umfasst die amtlichen Wahlbezirke der B\u00fcrgerschaftswahl 2014 in der Hanse- und Universit\u00e4tsstadt Rostock vom 25.05.2014 mit Informationen zu Nummer.",
+        "target_url": "https://geo.sv.rostock.de/download/opendata/buergerschaftswahl_2014/buergerschaftswahl_2014_wahlbezirke.json"
+    },
+    {
+        "description": "Wahlbezirke der Landtagswahl 2006 Diese Ressource umfasst die amtlichen Wahlbezirke der Landtagswahl 2006 in der Hanse- und Universit\u00e4tsstadt Rostock vom 17.09.2006 mit Informationen zu Nummer.",
+        "target_url": "https://geo.sv.rostock.de/download/opendata/landtagswahl_2006/landtagswahl_2006_wahlbezirke.json"
+    },
+    {
+        "description": "Wahlbezirke der Landtagswahl 2002 Diese Ressource umfasst die amtlichen Wahlbezirke der Landtagswahl 2002 in der Hanse- und Universit\u00e4tsstadt Rostock vom 22.09.2002 mit Informationen zu Nummer.",
+        "target_url": "https://geo.sv.rostock.de/download/opendata/landtagswahl_2002/landtagswahl_2002_wahlbezirke.json"
+    },
+    {
+        "description": "Wahlbezirke der B\u00fcrgerschaftswahl 2009 Diese Ressource umfasst die amtlichen Wahlbezirke der B\u00fcrgerschaftswahl 2009 in der Hanse- und Universit\u00e4tsstadt Rostock vom 07.06.2009 mit Informationen zu Nummer.",
+        "target_url": "https://geo.sv.rostock.de/download/opendata/buergerschaftswahl_2009/buergerschaftswahl_2009_wahlbezirke.json"
+    },
+    {
+        "description": "Wahlbezirke der Bundestagswahl 2009 Diese Ressource umfasst die amtlichen Wahlbezirke der Bundestagswahl 2009 in der Hanse- und Universit\u00e4tsstadt Rostock vom 27.09.2009 mit Informationen zu Nummer.",
+        "target_url": "https://geo.sv.rostock.de/download/opendata/bundestagswahl_2009/bundestagswahl_2009_wahlbezirke.json"
+    },
+    {
+        "description": "Wahlbezirke der B\u00fcrgerschaftswahl 2004 Diese Ressource umfasst die amtlichen Wahlbezirke der B\u00fcrgerschaftswahl 2004 in der Hanse- und Universit\u00e4tsstadt Rostock vom 13.06.2004 mit Informationen zu Nummer.",
+        "target_url": "https://geo.sv.rostock.de/download/opendata/buergerschaftswahl_2004/buergerschaftswahl_2004_wahlbezirke.json"
+    },
+    {
+        "description": "Wahlbezirke der Europaparlamentswahl 2009 Diese Ressource umfasst die amtlichen Wahlbezirke der Europaparlamentswahl 2009 in der Hanse- und Universit\u00e4tsstadt Rostock vom 07.06.2009 mit Informationen zu Nummer.",
+        "target_url": "https://geo.sv.rostock.de/download/opendata/europaparlamentswahl_2009/europaparlamentswahl_2009_wahlbezirke.json"
+    },
+    {
+        "description": "Wahlbezirke der Bundestagswahl 2005 Diese Ressource umfasst die amtlichen Wahlbezirke der Bundestagswahl 2005 in der Hanse- und Universit\u00e4tsstadt Rostock vom 18.09.2005 mit Informationen zu Nummer.",
+        "target_url": "https://geo.sv.rostock.de/download/opendata/bundestagswahl_2005/bundestagswahl_2005_wahlbezirke.json"
+    },
+    {
+        "description": "Wahlbezirke der Landtagswahl 2011 Diese Ressource umfasst die amtlichen Wahlbezirke der Landtagswahl 2011 in der Hanse- und Universit\u00e4tsstadt Rostock vom 04.09.2011 mit Informationen zu Nummer.",
+        "target_url": "https://geo.sv.rostock.de/download/opendata/landtagswahl_2011/landtagswahl_2011_wahlbezirke.json"
+    },
+    {
+        "description": "Wahlbezirke der Bundestagswahl 2002 Diese Ressource umfasst die amtlichen Wahlbezirke der Bundestagswahl 2002 in der Hanse- und Universit\u00e4tsstadt Rostock vom 22.09.2002 mit Informationen zu Nummer.",
+        "target_url": "https://geo.sv.rostock.de/download/opendata/bundestagswahl_2002/bundestagswahl_2002_wahlbezirke.json"
+    },
+    {
+        "description": "Wahlbezirke der Bundestagswahl 2013 Diese Ressource umfasst die amtlichen Wahlbezirke der Bundestagswahl 2013 in der Hanse- und Universit\u00e4tsstadt Rostock vom 22.09.2013 mit Informationen zu Nummer.",
+        "target_url": "https://geo.sv.rostock.de/download/opendata/bundestagswahl_2013/bundestagswahl_2013_wahlbezirke.json"
+    },
+    {
+        "description": "Wahlbezirke der Europaparlamentswahl 2004 Diese Ressource umfasst die amtlichen Wahlbezirke der Europaparlamentswahl 2004 in der Hanse- und Universit\u00e4tsstadt Rostock vom 13.06.2004 mit Informationen zu Nummer.",
+        "target_url": "https://geo.sv.rostock.de/download/opendata/europaparlamentswahl_2004/europaparlamentswahl_2004_wahlbezirke.json"
+    },
+    {
+        "description": "Wahlbezirke der Landtagswahl 2016 Diese Ressource umfasst die amtlichen Wahlbezirke der Landtagswahl 2016 in der Hanse- und Universit\u00e4tsstadt Rostock vom 04.09.2016 mit Informationen zu Nummer.",
+        "target_url": "https://geo.sv.rostock.de/download/opendata/landtagswahl_2016/landtagswahl_2016_wahlbezirke.json"
+    },
+    {
+        "description": "Wahlbezirke der Europaparlamentswahl 2014 Diese Ressource umfasst die amtlichen Wahlbezirke der Europaparlamentswahl 2014 in der Hanse- und Universit\u00e4tsstadt Rostock vom 25.05.2014 mit Informationen zu Nummer.",
+        "target_url": "https://geo.sv.rostock.de/download/opendata/europaparlamentswahl_2014/europaparlamentswahl_2014_wahlbezirke.json"
+    },
+    {
+        "description": "Wahlbereiche der B\u00fcrgerschaftswahl 2014 Diese Ressource umfasst die amtlichen Wahlbereiche der B\u00fcrgerschaftswahl 2014 in der Hanse- und Universit\u00e4tsstadt Rostock vom 25.05.2014 mit Informationen zu Nummer.",
+        "target_url": "https://geo.sv.rostock.de/download/opendata/buergerschaftswahl_2014/buergerschaftswahl_2014_wahlbereiche.json"
+    },
+    {
+        "description": "Wahlbereiche der B\u00fcrgerschaftswahl 2009 Diese Ressource umfasst die amtlichen Wahlbereiche der B\u00fcrgerschaftswahl 2009 in der Hanse- und Universit\u00e4tsstadt Rostock vom 07.06.2009 mit Informationen zu Nummer.",
+        "target_url": "https://geo.sv.rostock.de/download/opendata/buergerschaftswahl_2009/buergerschaftswahl_2009_wahlbereiche.json"
+    },
+    {
+        "description": "Wahlbereiche der B\u00fcrgerschaftswahl 2004 Diese Ressource umfasst die amtlichen Wahlbereiche der B\u00fcrgerschaftswahl 2004 in der Hanse- und Universit\u00e4tsstadt Rostock vom 13.06.2004 mit Informationen zu Nummer.",
+        "target_url": "https://geo.sv.rostock.de/download/opendata/buergerschaftswahl_2004/buergerschaftswahl_2004_wahlbereiche.json"
+    },
+    {
+        "description": "Wahlkreise der Landtagswahl 2016 Diese Ressource umfasst die amtlichen Wahlkreise der Landtagswahl 2016 in der Hanse- und Universit\u00e4tsstadt Rostock vom 04.09.2016 mit Informationen zu Bezeichnung.",
+        "target_url": "https://geo.sv.rostock.de/download/opendata/landtagswahl_2016/landtagswahl_2016_wahlkreise.json"
+    }
+]

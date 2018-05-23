@@ -1,0 +1,258 @@
+swagger: '2.0'
+info:
+  version: "1.0"
+  title: Open Government Data Service
+  description: An Extensible Framework for Acessing Open Government Data
+  contact:
+    name: Elias Grünewald
+host: localhost:5000
+basePath: /api
+schemes:
+  - http
+consumes:
+  - application/json
+produces:
+  - application/json
+paths:
+  "/data":
+    get:
+      description:  
+        "Returns whole data catalog with all catalog items (Warning: May be more than 15,000 entries)."
+      operationId: get_api_data
+      produces:
+        - application/json
+      parameters:
+        - name: status_code
+          in: query
+          description: Filters data catalog by HTTP status code (e.g. 200).
+          required: true
+          type: integer
+          format: int32
+        - name: search
+          in: query
+          description: "Filters data catalog by string (pattern matching)"
+          required: false
+          type: string
+      responses:
+        "200":
+          description: Data catalog
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/CatalogItem'
+  "/data/{catalog_index}":
+    get:
+      description: "Endpoint returning tabular data set as JSON document."
+      operationId: get_api_data_by_catalog_index
+      produces: 
+        - application/json
+      parameters:
+        - name: catalog_index
+          in: path
+          description: Position of data set in data catalog.
+          required: true
+          type: integer
+          format: int32
+        - name: from
+          in: query
+          description: Starting index (e.g. 0 for first element).        
+          required: false
+          type: integer
+          format: int32
+        - name: to
+          in: query
+          description: Ending index (e.g. 3 for up to third element).        
+          required: false
+          type: integer
+          format: int32
+        - name: skip_rows
+          in: query
+          description: Specify how many lines should be skipped at the beginnig (=offset).
+          required: false
+          type: integer
+        - name: sep
+          in: query
+          description: "Original data set is a csv file seperated by sep parameter (e.g. <;> (default) or <,>."
+          required: false
+          type: string
+      responses:
+        200:
+          description: "Data set as JSON array."
+        400:
+          description: "Unexpected error (most likely an IndexError)."
+
+  "/join/{catalog_index_left}/{catalog_index_right}":
+    post:
+      description: "Endpoint returning tabular data set as JSON document."
+      operationId: get_api_data_perform_join
+      produces: 
+        - application/json
+      parameters:
+        - in: body
+          name: body
+          description: List of join pairs (columns to be joined on).
+          required: true
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/Join pair'
+        - name: catalog_index_left
+          in: path
+          description: Position of left data set in data catalog.
+          required: true
+          type: integer
+          format: int32
+        - name: catalog_index_right
+          in: path
+          description: Position of right data set in data catalog.
+          required: true
+          type: integer
+          format: int32
+        - name: sep_left
+          in: query
+          description: "Original (left) data set is a csv file seperated by sep parameter (e.g. <;> (default) or <,>."
+          required: false
+          type: string          
+        - name: sep_right
+          in: query
+          description: "Original (right) data set is a csv file seperated by sep parameter (e.g. <;> (default) or <,>."
+          required: false
+          type: string
+        - name: sep
+          in: query
+          description: "Joined data set is seperated by sep parameter (e.g. <;> (default) or <,>)."
+          required: false
+          type: string          
+        - name: skip_rows
+          in: query
+          description: Specify how many lines should be skipped at the beginnig (=offset).
+          required: false
+          type: integer
+      responses:
+        200:
+          description: "Data set as JSON array."
+        404:
+          description: "This (or these) endpoint (or endpoints) does (or do) not exist."
+
+  "/data/visualization/{catalog_index}":
+    get:
+      description: "Endpoint returning JavaScript data set visualizations."
+      operationId: get_api_data_by_catalog_index
+      produces: 
+        - application/json
+      parameters:
+        - name: catalog_index
+          in: path
+          description: Position of data set in data catalog.
+          required: true
+          type: integer
+          format: int32
+        - name: sep
+          in: query
+          description: "Original data set is a csv file seperated by sep parameter (e.g. <;> (default) or <,>)."
+          required: false
+          type: string
+        - name: skip_rows
+          in: query
+          description: Specify how many lines should be skipped at the beginnig (=offset).
+          required: false
+          type: integer
+        - name: x_axis
+          in: query
+          description: Column index for x-axis (e.g. 0 for first column; defaults to 0).        
+          required: false
+          type: integer
+          format: int32
+        - name: y_axis
+          in: query
+          description: Column index for y-axis (e.g. 3 for up to third column; defaults to 1).        
+          required: false
+          type: integer
+          format: int32
+      responses:
+        200:
+          description: "Data set's visualization as HTML code (d3 plot)"
+        400:
+          description: "Unexpected error (most likely an IndexError)."
+
+  "/client":
+    get:
+      description: "Returns an examplary python script that can retrieve data sets from the above"
+      operationId: client_python
+      produces: 
+        - text/x-python
+      parameters:
+        - name: catalog_index
+          in: query
+          description: Position of data set in data catalog.
+          required: false
+          type: integer
+          format: int32
+        - name: from
+          in: query
+          description: Starting index (e.g. 0 for first element).        
+          required: false
+          type: integer
+          format: int32
+        - name: to
+          in: query
+          description: Ending index (e.g. 3 for up to third element).        
+          required: false
+          type: integer
+          format: int32
+        - name: skip_rows
+          in: query
+          description: Specify how many lines should be skipped at the beginning (=offset).
+          required: false
+          type: integer
+        - name: sep
+          in: query
+          description: "Original data set is a csv file seperated by sep parameter (e.g. <;> (default) or <,>)."
+          required: false
+          type: string
+      responses:
+        200:
+          description: "Examplary python script"
+        400:
+          description: "Unexpected error."
+
+definitions:
+  CatalogItem:
+    type: object
+    required:
+      - target_url
+      - description
+    properties:
+      target_url:
+        type: string
+      description:
+        type: string
+  Join pair:
+    type: object
+    required: 
+      - left
+      - right
+    properties:
+        left:
+          type: string
+        right:
+          type: string
+#  Data set:
+#    type: object
+#    required: 
+#      - data
+#    properties:
+#      - data:
+#        type: array
+#        items:
+#          $ref: '#/definitions/Key-value pair'
+#  Key-value pair:
+#    type: object
+#    required:
+#      - column
+#      - cell
+#    properties:
+#      column:
+#        type: string
+#      cell:
+#        type: string

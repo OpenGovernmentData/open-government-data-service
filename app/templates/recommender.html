@@ -1,0 +1,92 @@
+
+<!--
+This program is part of the **Open Government Data Service** project
+
+Author: Elias Grünewald <gruenewald@tu-berlin.de>
+
+License : GPL(v3)
+
+The **Open Government Data Service** is free software: you can redistribute it and/or modify it under the terms of the
+GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+The **Open Government Data Service** is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+GNU General Public License for more details. You should have received a copy of the GNU General Public License along
+with **Open Government Data Service**. If not, see http://www.gnu.org/licenses.
+-->
+
+
+<p>
+<div class="card">
+    <h3 id="recommender" class="card-header">Do you like this data set?</h3>
+
+    <div class="card-body">
+        <div class="row">
+            <script>
+                function vote(rating) {
+                    var catalog_index = document.getElementById("catalog_index").value;
+                    $.post(("/api/data/rating/" + catalog_index + "?rating=" + rating + "&offset=1"), function(json) {
+                        document.getElementById("up_count").innerText = json[0]['upvotes'];
+                        document.getElementById("down_count").innerText =json[0]['downvotes'];
+                    }, 'json');
+                    document.getElementById("up_btn").disabled = true;
+                    document.getElementById("down_btn").disabled = true;
+                    if (rating == "upvotes") {
+                        document.getElementById("up_btn").classList.remove("btn-outline-info");
+                        document.getElementById("up_btn").classList.add("btn-info");
+                    } else if (rating == "downvotes") {
+                        document.getElementById("down_btn").classList.remove("btn-outline-info");
+                        document.getElementById("down_btn").classList.add("btn-info");
+                    }
+                }
+            </script>
+            <div class="col col-sm-1"><!--spacing--></div>
+            <br>
+            <div class="col col-sm-4">
+                <br>
+
+                <div class="row">
+                    <div class="input-group">
+                        &nbsp; &nbsp;
+                        <button class="btn btn-outline-info" id="up_btn" type="submit" onclick="vote('upvotes')">&#128077; yes! </button>
+                        <button class="btn btn-static" id="up_count">{{ upvotes }}</button>
+                    </div>
+                    &nbsp; &nbsp;
+                </div>
+                <div class="row">
+                    &nbsp; &nbsp;
+                    <button class="btn btn-outline-info" id="down_btn" type="submit" onclick="vote('downvotes')">&#128078; no! </button>
+                    <button class="btn btn-static" id="down_count">{{ downvotes }}</button>
+                </div>
+                <script>
+                    // document.getElementById("down_count").disabled = true;
+                    // document.getElementById("up_count").disabled = true;
+                </script>
+
+            </div>
+            <br>
+
+            <div class="col col-sm-4">
+                <h3>Explore other popular data sets:</h3>
+                {{recommended_data_sets|safe}}
+            </div>
+
+            <script>
+                function addLinksToRecommenderTable() {
+                    var nbRows = document.getElementById('recommender-table').getElementsByTagName('tr').length;
+                    for(var i = 1; i <= nbRows; i++) {
+                        var before = document.getElementById('recommender-table').getElementsByTagName('tr')[i].getElementsByTagName('td')[0].innerHTML;
+                        var after = '<a href=\"/data/' + before + '\">' + before + '</a>';
+                        document.getElementById('recommender-table').getElementsByTagName('tr')[i].getElementsByTagName('td')[0].innerHTML = after;
+                    }
+                }
+                addLinksToRecommenderTable();
+            </script>
+
+
+        </div>
+</p>
+</div>
+</div>
+</p>

@@ -1,0 +1,122 @@
+
+<!--
+This program is part of the **Open Government Data Service** project
+
+Author: Elias Grünewald <gruenewald@tu-berlin.de>
+
+License : GPL(v3)
+
+The **Open Government Data Service** is free software: you can redistribute it and/or modify it under the terms of the
+GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+The **Open Government Data Service** is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+GNU General Public License for more details. You should have received a copy of the GNU General Public License along
+with **Open Government Data Service**. If not, see http://www.gnu.org/licenses.
+-->
+
+
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h1>{% block title %} Join data sets {% endblock %} <i class="fa fa-puzzle-piece" aria-hidden="true"></i></h1>
+
+<div class="row justify-content-center">
+
+<div class="col-sm-6">
+
+    <script>
+        var joinPairs = []
+
+        function setValueOfForm() {
+            console.log(joinPairs);
+            var form = document.getElementById("joinPairsForm");
+            form.value = JSON.stringify(joinPairs);
+        }
+
+        function addJoin() {
+            var left_col = parseInt(document.getElementById("left_select").value);
+            var right_col = parseInt(document.getElementById("right_select").value);
+            var left_col_name =  $("#left_select>option:selected").text();
+            var right_col_name = $("#right_select>option:selected").text();
+            var joinPair = { left : left_col, right : right_col };
+            var joinPairsArea = document.getElementById("joinPairsArea");
+
+            var contains = false;
+            joinPairs.forEach(function(pair) {
+                if(pair.left == joinPair.left) {
+                    contains = true;
+                };
+            });
+
+            if(!contains) {
+                joinPairs.push(joinPair);
+                joinPairsArea.innerHTML += "" +
+                    "<h4>\n" +
+                        "<span class=\"badge badge-info\">" + left_col_name + "</span>\n" +
+                        "<i class=\"fa fa-arrows-h\" aria-hidden=\"true\"></i>\n" +
+                        "<span class=\"badge badge-info\">" + right_col_name + "</span>\n" +
+                    "</h4>";
+            }
+
+            document.getElementById("joinTablesBtn").disabled = false;
+            console.log(joinPairs);
+        }
+    </script>
+
+
+
+    <div class="input-group">
+        <select class="custom-select" id="left_select" name="left_select">
+            {% for i in index_left %}
+                {% if loop.index0 == 0 %}
+                    <option selected value="{{ loop.index0 }}">{{ i }}</option>
+                {% else %}
+                    <option value="{{ loop.index0 }}">{{ i }}</option>
+                {% endif %}
+            {% endfor %}
+        </select>
+        <select class="custom-select" id="right_select" name="right_select">
+            {% for i in index_right %}
+                {% if loop.index0 == 0 %}
+                    <option selected value="{{ loop.index0 }}">{{ i }}</option>
+                {% else %}
+                    <option value="{{ loop.index0 }}">{{ i }}</option>
+                {% endif %}
+            {% endfor %}
+        </select>
+
+        <div class="input-group-append">
+            <button class="btn btn-info" type="submit" onclick="addJoin()">
+                Add join
+            </button>
+        </div>
+    </div>
+
+    <div id="joinPairsArea" style="text-align: center;"><!-- inserted by #addJoin() --></div>
+
+</div>
+</div>
+
+<div class="row">
+    <div class="col">
+    <br>
+        <form method="POST" id="joinPairs">
+            <input id="joinPairsForm" type="hidden" name="joinPairsForm" value="" />
+    <button id="joinTablesBtn" type="submit" class="btn btn-info btn-lg" disabled onclick="setValueOfForm()" style="margin-left: 40%;">
+        Join tables
+    </button>
+        </form>
+    </div>
+</div>
+</div>
+
+
+<div class="row justify-content-center">
+        <div class="col col-6">{{ view_left|safe }}</div>
+        <div class="col col-6">{{ view_right|safe }}</div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,72 @@
+
+<!--
+This program is part of the **Open Government Data Service** project
+
+Author: Elias Grünewald <gruenewald@tu-berlin.de>
+
+License : GPL(v3)
+
+The **Open Government Data Service** is free software: you can redistribute it and/or modify it under the terms of the
+GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+The **Open Government Data Service** is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+GNU General Public License for more details. You should have received a copy of the GNU General Public License along
+with **Open Government Data Service**. If not, see http://www.gnu.org/licenses.
+-->
+
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h1>{% block title %} Data catalog {% endblock %}</h1>
+
+{% include 'search.html' %}
+
+
+        <div class="card-body">
+          <div class="table-responsive">
+            <!--table id="dataTable" class="table table-bordered table-striped" width="100%" cellspacing="0"-->
+            <table table class="table table-bordered table-striped" width="100%" cellspacing="0">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>JSON/API</th>
+                  <th>Status</th>
+                  <th>Description</th>
+                  <th>External source</th>
+                </tr>
+              </thead>
+              <tfoot>
+                <tr>
+                  <th>#</th>
+                  <th>JSON/API</th>
+                  <th>Status</th>
+                  <th>Description</th>
+                  <th>External source</th>
+                </tr>
+              </tfoot>
+              <tbody>
+                {% for i in range(0, catalog_length) %}
+                    <tr>
+                      <td><a href="/data/{{ loop.index0 }}"><b>{{ loop.index0 }}</b></a></td>
+                      <td><a href="/api/data/{{ loop.index0 }}">/api/data/{{ loop.index0 }}</a></td>
+                      {% if catalog_status_length < catalog_length %}
+                          <td>{{ catalog_status[loop.index0] }}</td>
+                      {% else %}
+                          <td> 999 (?) </td>
+                      {% endif %}
+                      <td><b>{{ catalog[loop.index0]['description']|truncate(50, True) }}</b></td>
+                      <td><a href="{{ catalog[loop.index0]['target_url'] }}">{{ catalog[loop.index0]['target_url']|truncate(25, True)}}</a></td>
+                    </tr>
+                {% endfor %}
+               </tbody>
+              </table>
+
+          </div>
+        </div>
+        <div class="card-footer small text-muted">See <a href="/api/data/">full catalog </a>. {{ catalog_timestamp }}</div>
+      </div>
+
+{% endblock %}

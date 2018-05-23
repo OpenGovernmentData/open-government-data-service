@@ -1,0 +1,3 @@
+[console_scripts]
+datapackage = datapackage.cli:cli
+

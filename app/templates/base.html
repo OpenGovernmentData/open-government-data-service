@@ -1,0 +1,168 @@
+        <!DOCTYPE html>
+        <html lang="en">
+
+        <!--
+        This program is part of the **Open Government Data Service** project
+
+        Author: Elias Grünewald <gruenewald@tu-berlin.de>
+
+        License : GPL(v3)
+
+        The **Open Government Data Service** is free software: you can redistribute it and/or modify it under the terms of the
+        GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or
+        (at your option) any later version.
+
+        The **Open Government Data Service** is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;
+        without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+        GNU General Public License for more details. You should have received a copy of the GNU General Public License along
+        with **Open Government Data Service**. If not, see http://www.gnu.org/licenses.
+        -->
+
+        <head>
+          <meta charset="utf-8">
+          <meta http-equiv="X-UA-Compatible" content="IE=edge">
+          <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+          <title>Open Government Data</title>
+          <meta name="description" content="Open Government Data">
+          <meta name="author" content="Elias Grünewald">
+          <meta name="keywords" content="TU Berlin, Technische Universität Berlin, Open, Data, Open Government Data, Open Data">
+          <!-- Privacy -->
+          <meta name="referrer" content="no-referrer">
+
+          <link rel="shortcut icon" type="image/x-icon" href="{{ url_for('static', filename='img/favicon.png') }}"/>
+
+          <script src="{{ url_for('static', filename='pace/pace.min.js') }}"></script>
+          <link href="{{ url_for('static', filename='pace/pace.css') }}" rel="stylesheet">
+          <link href="{{ url_for('static', filename='css/github.css') }}" rel="stylesheet" type="text/css">
+
+          <!-- Bootstrap core CSS-->
+          <link href="{{ url_for('static', filename='vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
+          <!-- Custom fonts for this template-->
+          <link href="{{ url_for('static', filename='vendor/font-awesome/css/font-awesome.min.css') }}" rel="stylesheet" type="text/css">
+          <!-- Page level plugin CSS-->
+          <link href="{{ url_for('static', filename='vendor/datatables/dataTables.bootstrap4.css') }}" rel="stylesheet">
+          <!-- Custom styles for this template-->
+          <link href="{{ url_for('static', filename='css/sb-admin.css') }}" rel="stylesheet">
+
+          {% if leaflet %}
+             <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.1/dist/leaflet.css" />
+          {% endif%}
+        </head>
+
+
+        <!-- Bootstrap core JavaScript-->
+        <script src="{{ url_for('static', filename='vendor/jquery/jquery.min.js') }}"></script>
+        <script src="{{ url_for('static', filename='vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+        <!-- Core plugin JavaScript-->
+        <script src="{{ url_for('static', filename='vendor/jquery-easing/jquery.easing.min.js') }}"></script>
+        <!-- Page level plugin JavaScript-->
+        <script src="{{ url_for('static', filename='vendor/chart/Chart.min.js') }}"></script>
+        <script src="{{ url_for('static', filename='vendor/datatables/jquery.dataTables.js') }}"></script>
+        <script src="{{ url_for('static', filename='vendor/datatables/dataTables.bootstrap4.js') }}"></script>
+        <!-- Custom scripts for all pages-->
+        <script src="{{ url_for('static', filename='js/sb-admin.min.js') }}"></script>
+        <!-- Custom scripts for this page-->
+        <script src="{{ url_for('static', filename='js/sb-admin-datatables.min.js') }}"></script>
+        <!--script src="{{ url_for('static', filename='js/sb-admin-charts.min.js') }}"></script-->
+
+
+        {% if leaflet %}
+            <script src="{{ url_for('static', filename='leaflet/leaflet.js')}}"></script>
+            <script src="{{ url_for('static', filename='leaflet/leaflet-hash.js')}}"></script>
+            <script src="{{ url_for('static', filename='leaflet/leaflet.social.js')}}"></script>
+             <link href="{{ url_for('static', filename='leaflet/leaflet.social.css') }}" rel="stylesheet">
+             <link href="{{ url_for('static', filename='leaflet/MarkerCluster.css') }}" rel="stylesheet">
+             <link href="{{ url_for('static', filename='leaflet/MarkerCluster.Default.css') }}" rel="stylesheet">
+            <script src="{{ url_for('static', filename='leaflet/leaflet.markercluster-src.js')}}"></script>
+            <script src="{{ url_for('static', filename='leaflet/proj4-src.js')}}"></script>
+            <script src="{{ url_for('static', filename='leaflet/proj4leaflet.js')}}"></script>
+            <script src="{{ url_for('static', filename='leaflet/Leaflet.fullscreen.js')}}"></script>
+             <link href="{{ url_for('static', filename='leaflet/Leaflet.fullscreen.css')}}" rel="stylesheet">
+        {% endif%}
+
+        <body class="fixed-nav sticky-footer bg-dark" id="page-top">
+
+          <!-- Navigation-->
+          <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+            <a class="navbar-brand" href="/">&#x1F4D6; Open Government Data</a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+              <ul class="navbar-nav navbar-sidenav" id="exampleAccordion">
+
+                <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Dashboard">
+                  <a class="nav-link" href="/">
+                    <i class="fa fa-fw fa-dashboard"></i>
+                    <span class="nav-link-text">Dashboard</span>
+                  </a>
+                </li>
+
+                  <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Data set">
+                      <a class="nav-link" href="/data/950"> <!-- {{ range(0, 15000) | random }}  Select random data set here -->
+                          <i class="fa fa-fw fa-file"></i>
+                          <span class="nav-link-text">Preview data set</span>
+                      </a>
+                  </li>
+
+                  <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Data set">
+                      <a class="nav-link" href="/data/join/">
+                          <i class="fa fa-fw fa-copy"></i>
+                          <span class="nav-link-text">Join data sets</span>
+                      </a>
+                  </li>
+
+                <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Data catalog">
+                  <a class="nav-link" href="/data">
+                    <i class="fa fa-fw fa-database"></i>
+                    <span class="nav-link-text">Data catalog</span>
+                  </a>
+                </li>
+
+                  <li class="nav-item" data-toggle="tooltip" data-placement="right" title="API documentation">
+                      <a class="nav-link" href="/api/data/docs">
+                          <i class="fa fa-fw fa-exchange"></i>
+                          <span class="nav-link-text">API documentation</span>
+                      </a>
+                  </li>
+
+
+              </ul>
+              <ul class="navbar-nav sidenav-toggler">
+                <li class="nav-item">
+                  <a class="nav-link text-center" id="sidenavToggler">
+                    <i class="fa fa-fw fa-angle-left"></i>
+                  </a>
+                </li>
+              </ul>
+
+            </div>
+          </nav>
+          <div class="content-wrapper">
+            <div class="container-fluid">
+              <!-- Breadcrumbs-->
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item">
+                  <a href="#">{% block title %}{% endblock %}</a>
+                </li>
+              </ol>
+             {% block content %}{% endblock %}
+            </div>
+
+            <!-- /.container-fluid-->
+            <!-- /.content-wrapper-->
+            <footer class="sticky-footer">
+              <div class="container">
+                <div class="text-center">
+                  <small>2018</small>
+                </div>
+              </div>
+            </footer>
+            <!-- Scroll to Top Button-->
+            <a class="scroll-to-top rounded" href="#page-top">
+              <i class="fa fa-angle-up"></i>
+            </a>
+
+          </div>
+        </body>
+        </html>

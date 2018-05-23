@@ -1,0 +1,300 @@
+
+<!--
+This program is part of the **Open Government Data Service** project
+
+Author: Elias Grünewald <gruenewald@tu-berlin.de>
+
+License : GPL(v3)
+
+The **Open Government Data Service** is free software: you can redistribute it and/or modify it under the terms of the
+GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+The **Open Government Data Service** is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+GNU General Public License for more details. You should have received a copy of the GNU General Public License along
+with **Open Government Data Service**. If not, see http://www.gnu.org/licenses.
+-->
+
+
+{% if embedded  %}
+    {% extends 'base.html' %}
+{% endif %}
+
+{% block content %}
+
+<h1>{% block title %} Data set #{{ catalog_index }} {% endblock %}</h1>
+
+
+{% if embedded %}
+<script>
+    function setRandomCatalogIndex() {
+        document.getElementById("catalog_index").value = Math.floor((Math.random() * {{ catalog_length }}));
+    }
+
+    function exchangeSeparator() {
+        var currentSep = document.getElementById("sep").value;
+        document.getElementById("sep").value = (currentSep == ';') ? "," : ";";
+        addParameterToLinks();
+    }
+</script>
+{% endif %}
+
+{% if embedded %}
+<p>
+    <div class="card">
+        <div class="card-body">
+            <form method="POST">
+<p>
+<div class="row">
+
+    <div class="col col-sm-2">
+        <label class="form-label" for="catalog_index">Catalog index:</label>
+
+        <div class="input-group">
+            <input id="catalog_index" name="catalog_index" type="number" class="form-control" placeholder="42" value="{{ catalog_index }}">
+            <span class="input-group-append">
+                    <button class="btn btn-info" type="submit" onclick="setRandomCatalogIndex()">
+                      <i class="fa fa-random" aria-hidden="true"></i>
+                    </button>
+                  </span>
+        </div>
+    </div>
+
+    <div class="col col-sm-1">
+        <label class="form-label" for="catalog_index">Separator:</label>
+        <div class="input-group">
+            <input id="sep" name="sep" type="text" class="form-control" placeholder=";" value="{{ sep }}">
+            <span class="input-group-append">
+                <button class="btn btn-info" type="submit" onclick="exchangeSeparator()">
+                  <i class="fa fa-exchange" aria-hidden="true"></i>
+                </button>
+              </span>
+        </div>
+    </div>
+
+    <div class="col col-sm-2">
+        <label class="form-label" for="skip_rows">Skip rows:</label>
+
+        <div class="input-group">
+            <input id="skip_rows" name="skip_rows" type="number" class="form-control" placeholder="0" value={{ skip_rows }}>
+            <span class="input-group-append">
+                    <button class="btn btn-info" type="submit" onclick="addParameterToLinks()">
+                      <i class="fa fa-arrows-v" aria-hidden="true"></i>
+                    </button>
+                  </span>
+        </div>
+    </div>
+
+</div>
+</p>
+<div class="row">
+    <div class="col col-sm-1">
+        <p><button type="submit" class="btn btn-info">Show dataset</button></p>
+    </div>
+</div>
+</form>
+</div>
+</div>
+</p>
+{% endif %}
+
+<p>
+<div class="card">
+    <h3 class="card-header">{{ description }}</h3>
+    <div class="card-body">
+
+        <h4>
+            <a id="local_json" href="/api/data/{{ catalog_index }}" class="badge badge-warning">JSON</a>
+            <a id="external_csv" href="{{ target_url_external }}" class="badge badge-info">CSV | {{ target_url_external|truncate(40, True) }}</a>
+        </h4>
+
+
+        {% if embedded  %}
+        <script>
+            var currentSep = document.getElementById("sep").value;
+            var currentSkipRows = document.getElementById("skip_rows").value;
+            var skipRowsParam = '&skip_rows=' + currentSkipRows;
+
+            function  addParameterToLinks() {
+                currentSep = document.getElementById("sep").value;
+                var currentSkipRows = document.getElementById("skip_rows").value;
+                var skipRowsParam = '&skip_rows=' + currentSkipRows;
+
+                var href = (currentSep == ";") ? "/api/data/{{ catalog_index }}" + skipRowsParam : "/api/data/{{ catalog_index }}?sep=," + skipRowsParam;
+                document.getElementById("local_json").setAttribute("href", href);
+
+                var url = (currentSep == ";") ? "/data/{{ catalog_index }}?sep=;" + skipRowsParam : "/data/{{ catalog_index }}?sep=," + skipRowsParam;
+                history.pushState(null, "{{ description }}", url);
+            }
+            addParameterToLinks()
+        </script>
+        {% endif %}
+
+
+        <div class="table-responsive table-striped">
+            {{ catalog_table|safe }}
+        </div>
+    </div>
+    <div class="card-footer small text-muted">{{ timestamp }}</div>
+</div>
+</p>
+
+{% if visualization is not none %}
+<p>
+<div class="card">
+    <h3 id="visualization" class="card-header">Visualization</h3>
+    <div class="card-body">
+
+        <form method="POST">
+            <input type="hidden" name="catalog_index_hidden" value="{{ catalog_index }}">
+
+            <div class="row">
+                <div class="col col-sm-3">
+
+            <div class="input-group">
+                <select class="custom-select" id="x_axis" name="x_axis">
+                    {% for col in plottable_columns %}
+                        {% if loop.index0 == x_axis %}
+                            <option selected value="{{ loop.index0 }}">{{ col }}</option>
+                        {% else %}
+                            <option value="{{ loop.index0 }}">{{ col }}</option>
+                        {% endif %}
+                    {% endfor %}
+                </select>
+                <div class="input-group-append">
+                    <button class="btn btn-info" type="submit" onclick="">
+                        <i class="fa fa-line-chart" aria-hidden="true"></i>
+                        x-axis
+                    </button>
+                </div>
+            </div>
+
+                </div>
+
+        <div class="col col-sm-3">
+
+            <div class="input-group">
+                    <select class="custom-select" id="y_axis" name="y_axis">
+                        {% for col in plottable_columns %}
+                            {% if loop.index0 == y_axis %}
+                                <option selected value="{{ loop.index0 }}">{{ col }}</option>
+                            {% else %}
+                                <option value="{{ loop.index0 }}">{{ col }}</option>
+                            {% endif %}
+                        {% endfor %}
+                    </select>
+                    <div class="input-group-append">
+                        <button class="btn btn-info" type="submit" onclick="">
+                            <i class="fa fa-line-chart" aria-hidden="true"></i>
+                            y-axis
+                        </button>
+                    </div>
+                </div>
+
+                    </div>
+                </div>
+            </form>
+
+
+                <!-- visualization is generated at backend -->
+                {{ visualization|safe }}
+                <!-- /visualization ends here -->
+        </div>
+</div>
+</p>
+{% endif %}
+
+
+<script src="{{ url_for('static', filename='js/rainbow-custom.min.js') }}"></script>
+<p>
+<div class="card">
+    <h3 id="code_example" class="card-header">Code example for developers</h3>
+    <div class="card-body">
+        <h4><span class="badge badge-info">Python</span></h4>
+        <pre><code data-language="python">#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
+import requests
+
+response = requests.get('{{ service_url }}api/data/{{ catalog_index }}?sep={{ sep }}&skip_rows=0&from=0&to=10')
+print(response.content)
+        </code></pre>
+
+{% if visualization is not none %}
+        <h4><span class="badge badge-info">HTML</span></h4>
+        <pre><code data-language="javascript"><iframe src="{{ service_url }}api/data/visualization/950?sep=;&skip_rows=0&x_axis=0&y_axis=0" scrolling="no" style="width: 1300px; height: 750px; overflow: hidden;" ></iframe>
+        <p>See <a href="{{ service_url }}data/950?sep=;&skip_rows=0">original</a>.</p>
+        </code></pre>
+{% endif %}
+
+    </div>
+</div>
+</p>
+
+
+
+{% if embedded %}
+
+{% include 'recommender.html' %}
+
+{% endif %}
+
+
+
+<p>
+<div class="card">
+    <div class="card-body">
+
+        {% if status_code == 200 %}
+        <div class="col-12">
+            <div class="card text-white bg-success o-hidden h-100">
+                <div class="card-body">
+                    <div class="card-body-icon"><i class="fa fa-fw fa-plus-circle"></i></div>
+                    <h6>{{ status_code }} | {{ status_code_description }}</h6>
+                </div>
+            </div>
+        </div>
+        {% elif status_code >=  403 and  status_code <= 405 %}
+        <div class="col-12" style="margin: 0.5%;">
+            <div class="card text-white bg-danger o-hidden h-100">
+                <div class="card-body">
+                    <div class="card-body-icon"><i class="fa fa-fw fa-exclamation-circle"></i></div>
+                    <h6>{{ status_code }} | {{ status_code_description }}</h6>
+                </div>
+            </div>
+        </div>
+        {% elif status_code >=300 and status_code < 400 %}
+        <div class="col-12" style="margin: 0.5%;">
+            <div class="card text-white bg-warning o-hidden h-100">
+                <div class="card-body">
+                    <div class="card-body-icon"><i class="fa fa-fw fa-arrow-circle-right"></i></div>
+                    <h6>{{ status_code }} | {{ status_code_description }}</h6>
+                </div>
+            </div>
+        </div>
+        {% elif (status_code ==  999) %}
+        <div class="col-12" style="margin: 0.5%;">
+            <div class="card text-white bg-info o-hidden h-100">
+                <div class="card-body">
+                    <div class="card-body-icon"><i class="fa fa-fw fa-question-circle"></i></div>
+                    <h6>{{ status_code }} | {{ status_code_description }}</h6>
+                </div>
+            </div>
+        </div>
+        {% else %}
+        <div class="col-12" style="margin: 0.5%;">
+            <div class="card text-white bg-secondary o-hidden h-100">
+                <div class="card-body">
+                    <div class="card-body-icon"><i class="fa fa-fw fa-minus-circle"></i></div>
+                    <h6>{{ status_code }} | {{ status_code_description }}</h6>
+                </div>
+            </div>
+        </div>
+        {% endif %}
+
+    </div>
+</div>
+</p>
+
+{% endblock %}

@@ -1,0 +1,157 @@
+
+<!--
+This program is part of the **Open Government Data Service** project
+
+Author: Elias Grünewald <gruenewald@tu-berlin.de>
+
+License : GPL(v3)
+
+The **Open Government Data Service** is free software: you can redistribute it and/or modify it under the terms of the
+GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+The **Open Government Data Service** is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+GNU General Public License for more details. You should have received a copy of the GNU General Public License along
+with **Open Government Data Service**. If not, see http://www.gnu.org/licenses.
+-->
+
+
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h1>{% block title %} Dashboard {% endblock %}</h1>
+
+{% include 'search.html' %}
+
+
+<div class="row">
+    <div class="col-8">
+<div class="alert alert-info" style="margin: 0.5%;" role="alert">
+<h2>Welcome to this Open Government Data Service!</h2>
+    <a href="/data/950" class="btn btn-light btn-sm" role="button">Preview</a> data sets, <a href="/data/join" class="btn btn-light btn-sm" role="button">join them</a> or explore the <a href="/data" class="btn btn-light btn-sm" role="button">full catalog</a>. Developers play around <a href="/api/data/docs" class="btn btn-light btn-sm" role="button">here</a>. Have fun. &#128522;
+</div>
+</div>
+</div>
+
+
+<script>
+    function vote(rating) {
+        var catalog_index = document.getElementById("catalog_index").value;
+        $.post(("/api/data/rating/" + catalog_index + "?rating=" + rating + "&offset=1"), function(json) {
+            document.getElementById("up_count").innerText = json[0]['upvotes'];
+            document.getElementById("down_count").innerText =json[0]['downvotes'];
+        }, 'json');
+        document.getElementById("up_btn").disabled = true;
+        document.getElementById("down_btn").disabled = true;
+        if (rating == "upvotes") {
+            document.getElementById("up_btn").classList.remove("btn-outline-info");
+            document.getElementById("up_btn").classList.add("btn-info");
+        } else if (rating == "downvotes") {
+            document.getElementById("down_btn").classList.remove("btn-outline-info");
+            document.getElementById("down_btn").classList.add("btn-info");
+        }
+    }
+</script>
+
+<br>
+<div class="row">
+    <div class="col-6" style="margin: 0.5%;">
+        <div class="card text-white bg-dark o-hidden h-100">
+            <div class="card-body">
+                <div class="card-body-icon"><i class="fa fa-fw fa-info-circle"></i></div>
+                <h1 style="font-size: 300%;">{{ length }} data sets in catalog</h1>
+                <h6>See below for detailed status.</h6>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-3" style="margin: 0.5%;">
+        <div class="card text-white bg-success o-hidden h-100">
+            <div class="card-body">
+                <div class="card-body-icon"><i class="fa fa-fw fa-map"></i></div>
+                <h1 style="font-size: 300%;">{{ nb_maps }} maps </h1>
+                <h6>See <a href="/data/20002" class="btn btn-light btn-sm" role="button">example</a>.</h6>
+            </div>
+        </div>
+    </div>
+
+</div>
+<br>
+
+
+<div class="row">
+
+
+{% for index, series in health_table.iterrows() %}
+
+    {% if series['status_code'] == 200 %}
+        <div class="col-2" style="margin: 0.5%;">
+            <a href="data?status_code={{ series['status_code'] }}">
+            <div class="card text-white bg-success o-hidden h-100">
+                <div class="card-body">
+                    <div class="card-body-icon"><i class="fa fa-fw fa-plus-circle"></i></div>
+                    <h1 style="font-size: 300%;">{{ series['number_of_data_sets'] }}</h1>
+                    <h6>{{ series['status_code'] }} | {{ series['description'] }}</h6>
+                </div>
+            </div>
+            </a>
+        </div>
+    {% elif series['status_code'] >=  403 and  series['status_code'] <= 405 %}
+        <div class="col-2" style="margin: 0.5%;">
+            <a href="data?status_code={{ series['status_code'] }}">
+            <div class="card text-white bg-danger o-hidden h-100">
+                <div class="card-body">
+                    <div class="card-body-icon"><i class="fa fa-fw fa-exclamation-circle"></i></div>
+                    <h1>{{ series['number_of_data_sets'] }}</h1>
+                    <h6>{{ series['status_code'] }} | {{ series['description'] }}</h6>
+                </div>
+            </div>
+            </a>
+        </div>
+    {% elif series['status_code'] >=300 and series['status_code'] < 400 %}
+        <div class="col-2" style="margin: 0.5%;">
+            <a href="data?status_code={{ series['status_code'] }}">
+            <div class="card text-white bg-warning o-hidden h-100">
+                <div class="card-body">
+                    <div class="card-body-icon"><i class="fa fa-fw fa-arrow-circle-right"></i></div>
+                    <h1>{{ series['number_of_data_sets'] }}</h1>
+                    <h6>{{ series['status_code'] }} | {{ series['description'] }}</h6>
+                </div>
+            </div>
+            </a>
+        </div>
+    {% elif (series['status_code'] ==  999) %}
+        <div class="col-2" style="margin: 0.5%;">
+            <a href="data?status_code={{ series['status_code'] }}">
+            <div class="card text-white bg-info o-hidden h-100">
+                <div class="card-body">
+                    <div class="card-body-icon"><i class="fa fa-fw fa-question-circle"></i></div>
+                    <h1>{{ series['number_of_data_sets'] }}</h1>
+                    <h6>{{ series['status_code'] }} | {{ series['description'] }}</h6>
+                </div>
+            </div>
+            </a>
+        </div>
+    {% else %}
+        <div class="col-2" style="margin: 0.5%;">
+            <a href="data?status_code={{ series['status_code'] }}">
+            <div class="card text-white bg-secondary o-hidden h-100">
+                <div class="card-body">
+                    <div class="card-body-icon"><i class="fa fa-fw fa-minus-circle"></i></div>
+                    <h1>{{ series['number_of_data_sets'] }}</h1>
+                    <h6>{{ series['status_code'] }} | {{ series['description'] }}</h6>
+                </div>
+            </div>
+            </a>
+        </div>
+    {% endif %}
+
+
+{% endfor %}
+</div>
+
+
+
+{% endblock %}

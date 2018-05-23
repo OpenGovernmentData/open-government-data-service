@@ -1,0 +1,327 @@
+
+<!--
+This program is part of the **Open Government Data Service** project
+
+Author: Elias Grünewald <gruenewald@tu-berlin.de>
+
+License : GPL(v3)
+
+The **Open Government Data Service** is free software: you can redistribute it and/or modify it under the terms of the
+GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+The **Open Government Data Service** is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+GNU General Public License for more details. You should have received a copy of the GNU General Public License along
+with **Open Government Data Service**. If not, see http://www.gnu.org/licenses.
+-->
+
+
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h1>{% block title %} Data set #{{ catalog_index }} {% endblock %}</h1>
+
+{% if embedded %}
+<script>
+    function setRandomCatalogIndex() {
+        document.getElementById("catalog_index").value = Math.floor((Math.random() * {{ catalog_length }}));
+    }
+
+    function exchangeSeparator() {
+        var currentSep = document.getElementById("sep").value;
+        document.getElementById("sep").value = (currentSep == ';') ? "," : ";";
+        addParameterToLinks();
+    }
+</script>
+{% endif %}
+
+<p>
+    <div class="card">
+        <div class="card-body">
+            <form method="POST">
+<p>
+<div class="row">
+
+    <div class="col col-sm-2">
+        <label class="form-label" for="catalog_index">Catalog index:</label>
+
+        <div class="input-group">
+            <input id="catalog_index" name="catalog_index" type="number" class="form-control" placeholder="42" value="{{ catalog_index }}">
+            <span class="input-group-append">
+                    <button class="btn btn-info" type="submit" onclick="setRandomCatalogIndex()">
+                      <i class="fa fa-random" aria-hidden="true"></i>
+                    </button>
+                  </span>
+        </div>
+    </div>
+
+
+</div>
+</p>
+<div class="row">
+    <div class="col col-sm-1">
+        <p><button type="submit" class="btn btn-info">Show dataset</button></p>
+    </div>
+</div>
+</form>
+</div>
+</div>
+</p>
+
+<p>
+<div class="card">
+    <h3 class="card-header">{{ description }}</h3>
+    <div class="card-body">
+
+        <h4>
+            <a id="local_json" href="/api/data/{{ catalog_index }}" class="badge badge-warning">GeoJSON</a>
+            <a id="external_csv" href="{{ target_url_external }}" class="badge badge-info">GeoJSON | {{ target_url_external|truncate(40, True) }}</a>
+        </h4>
+
+
+        <script>
+            //var currentSep = document.getElementById("sep").value;
+            //var currentSkipRows = document.getElementById("skip_rows").value;
+            //var skipRowsParam = '&skip_rows=' + currentSkipRows;
+
+            function  addParameterToLinks() {
+                //currentSep = document.getElementById("sep").value;
+                //var currentSkipRows = document.getElementById("skip_rows").value;
+                //var skipRowsParam = '&skip_rows=' + currentSkipRows;
+
+                //var href = (currentSep == ";") ? "/api/data/{{ catalog_index }}" + skipRowsParam : "/api/data/{{ catalog_index }}?sep=," + skipRowsParam;
+                //document.getElementById("local_json").setAttribute("href", href);
+
+                //var url = (currentSep == ";") ? "/data/{{ catalog_index }}/map?sep=;" + skipRowsParam : "/data/{{ catalog_index }}?sep=," + skipRowsParam;
+                //history.pushState(null, "{{ description }}", url);
+
+            }
+            //addParameterToLinks()
+        </script>
+
+        <div id="mapid" style="width: 100%; height: 600px;"></div>
+        <script>
+
+            var redIcon = new L.Icon({
+                iconUrl: '{{ url_for('static', filename='leaflet/img/marker-icon-2x-red.png')}}',
+                shadowUrl: '{{ url_for('static', filename='leaflet/img/marker-shadow.png')}}',
+                iconSize: [25, 41],
+                iconAnchor: [12, 41],
+                popupAnchor: [1, -34],
+                shadowSize: [41, 41]
+            });
+
+            var greenIcon = new L.Icon({
+                iconUrl: '{{ url_for('static', filename='leaflet/img/marker-icon-2x-green.png')}}',
+                shadowUrl: '{{ url_for('static', filename='leaflet/img/marker-shadow.png')}}',
+                iconSize: [25, 41],
+                iconAnchor: [12, 41],
+                popupAnchor: [1, -34],
+                shadowSize: [41, 41]
+            });
+
+            var greyIcon = new L.Icon({
+                iconUrl: '{{ url_for('static', filename='leaflet/img/marker-icon-2x-grey.png')}}',
+                shadowUrl: '{{ url_for('static', filename='leaflet/img/marker-shadow.png')}}',
+                iconSize: [25, 41],
+                iconAnchor: [12, 41],
+                popupAnchor: [1, -34],
+                shadowSize: [41, 41]
+            });
+
+            var map = L.map('mapid').setView([52.5186202, 13.3761872], 13);
+
+            /**
+            // add wms layer
+
+            //var wmsLayer = L.tileLayer.wms('', {
+
+            var wmsLayer = L.tileLayer.wms('http://fbinter.stadt-berlin.de/fb/wfs/data/senstadt/s_vms_detailnetz_spatial_gesamt/?service=wfs&request=GetCapabilities', {
+                layers: 'fis:s_vms_detailnetz_spatial_gesamt'
+            }).addTo(map);
+
+            **/
+
+            L.tileLayer('https://{s}.tile.openstreetmap.se/hydda/full/{z}/{x}/{y}.png', {
+                maxZoom: 18,
+                attribution: 'Tiles courtesy of <a href="http://openstreetmap.se/" target="_blank">OpenStreetMap Sweden</a> &mdash; Map data &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+            }).addTo(map);
+
+
+           var marker = L.marker([52.5186202, 13.3761872], { icon : redIcon }).addTo(map);
+            marker.bindPopup("Open Government Data is awesome! :-)");
+
+            var geojsonFeatureCollection = {{ geo_json_feature_collection|safe }};
+
+            //var markers = L.markerClusterGroup(); // step 1 for clustering
+
+
+            function onEachFeature(feature, layer) {
+                if (feature.properties) {
+                    //layer.bindPopup(JSON.stringify(feature.properties));
+
+                    var table = '';
+                    var begin_table = '<table>';
+                    var end_table = '</table>';
+
+                    table +=  begin_table;
+
+                    for(var key in feature.properties){
+                        //console.log(key + ' - ' + feature.properties[key])
+                        table += '<tr><th scope="row">' + key + '</th><td>' + feature.properties[key] + '</td></tr>';
+                    }
+
+                    table += end_table;
+                    layer.bindPopup(table);
+                    //markers.addLayer(layer) // step 2 (for each)
+                }
+            }
+
+            //map.addLayer(markers); // step 3 (end)
+
+            geojsonFeatureCollection.features.forEach(function(feature, index) {
+                //var latlng = L.Projection.Mercator.unproject(L.point(feature.geometry.coordinates));
+                //feature.geometry.coordinates = [latlng.lng, latlng.lat];
+                L.geoJSON(feature, {
+                    onEachFeature: onEachFeature,
+                }).addTo(map);
+            });
+
+            // add fullscreen button
+            map.addControl(new L.Control.Fullscreen());
+
+            // adds URL hashing
+            var hash = new L.Hash(map);
+
+            // add social buttons
+            L.control.social({default_text: "Open Data is awesome: {{ description|truncate(80, False) }}"}).addTo(map);
+
+            // fit view to bounds
+            function fitBounds() { // is also called by button "reset view"
+                map.fitBounds(L.geoJSON(geojsonFeatureCollection).getBounds());
+            };
+            fitBounds();
+
+        </script>
+
+<p>
+<p>
+
+<div class="row">
+    <div class="col col-sm-3">
+
+    <button type="button" class="btn btn-info" onclick="fitBounds()">
+            <i class="fa fa-map-marker" aria-hidden="true"></i>
+            Reset view
+    </button>
+
+        <script>
+            function addDataSetToMap() {
+                var data_set_id = document.getElementById("addMap").value;
+
+                $.getJSON('{{ service_url }}api/data/' + data_set_id, function(data) {
+                    var yetAnotherFeatureCollection = data['data'][0]['geojson'];
+
+                    yetAnotherFeatureCollection.features.forEach(function(feature, index) {
+                        L.geoJSON(feature, {
+                            onEachFeature: onEachFeature,
+                        }).addTo(map);
+                    });
+                });
+                fitBounds();
+            };
+        </script>
+
+        <br />
+        <label class="form-label" for="addMap">Add another map by id:</label>
+
+        <div class="input-group">
+            <input id="addMap" name="addMap" type="number" class="form-control" placeholder="20042" value="42">
+            <span class="input-group-append">
+            <button class="btn btn-info" type="button" onclick="addDataSetToMap()">
+                <i class="fa fa-plus-circle" aria-hidden="true"></i>
+            </button>
+        </span>
+        </div>
+</div>
+</div>
+</div>
+</p>
+
+
+<p>
+<div class="card">
+    <div class="card-body">
+
+
+        <div class="table-responsive table-striped">
+            {{ catalog_table|safe }}
+        </div>
+
+
+    </div>
+</div>
+</p>
+
+
+{% include 'recommender.html' %}
+
+
+<p>
+<div class="card">
+    <div class="card-body">
+
+        {% if status_code == 200 %}
+        <div class="col-12">
+            <div class="card text-white bg-success o-hidden h-100">
+                <div class="card-body">
+                    <div class="card-body-icon"><i class="fa fa-fw fa-plus-circle"></i></div>
+                    <h6>{{ status_code }} | {{ status_code_description }}</h6>
+                </div>
+            </div>
+        </div>
+        {% elif status_code >=  403 and  status_code <= 405 %}
+        <div class="col-12" style="margin: 0.5%;">
+            <div class="card text-white bg-danger o-hidden h-100">
+                <div class="card-body">
+                    <div class="card-body-icon"><i class="fa fa-fw fa-exclamation-circle"></i></div>
+                    <h6>{{ status_code }} | {{ status_code_description }}</h6>
+                </div>
+            </div>
+        </div>
+        {% elif status_code >=300 and status_code < 400 %}
+        <div class="col-12" style="margin: 0.5%;">
+            <div class="card text-white bg-warning o-hidden h-100">
+                <div class="card-body">
+                    <div class="card-body-icon"><i class="fa fa-fw fa-arrow-circle-right"></i></div>
+                    <h6>{{ status_code }} | {{ status_code_description }}</h6>
+                </div>
+            </div>
+        </div>
+        {% elif (status_code ==  999) %}
+        <div class="col-12" style="margin: 0.5%;">
+            <div class="card text-white bg-info o-hidden h-100">
+                <div class="card-body">
+                    <div class="card-body-icon"><i class="fa fa-fw fa-question-circle"></i></div>
+                    <h6>{{ status_code }} | {{ status_code_description }}</h6>
+                </div>
+            </div>
+        </div>
+        {% else %}
+        <div class="col-12" style="margin: 0.5%;">
+            <div class="card text-white bg-secondary o-hidden h-100">
+                <div class="card-body">
+                    <div class="card-body-icon"><i class="fa fa-fw fa-minus-circle"></i></div>
+                    <h6>{{ status_code }} | {{ status_code_description }}</h6>
+                </div>
+            </div>
+        </div>
+        {% endif %}
+
+    </div>
+</div>
+</p>
+
+{% endblock %}

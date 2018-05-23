@@ -1,0 +1,134 @@
+
+<!--
+This program is part of the **Open Government Data Service** project
+
+Author: Elias Grünewald <gruenewald@tu-berlin.de>
+
+License : GPL(v3)
+
+The **Open Government Data Service** is free software: you can redistribute it and/or modify it under the terms of the
+GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+The **Open Government Data Service** is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+GNU General Public License for more details. You should have received a copy of the GNU General Public License along
+with **Open Government Data Service**. If not, see http://www.gnu.org/licenses.
+-->
+
+
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h1>{% block title %} Join data sets {% endblock %}</h1>
+
+<script>
+    function setRandomCatalogIndex(id) {
+        document.getElementById(id).value = Math.floor((Math.random() * 15000));
+        addParametersToLink()
+    }
+
+    function exchangeSeparator(id) {
+        var currentSep = document.getElementById(id).value;
+        document.getElementById(id).value = (currentSep == ';') ? "," : ";";
+        addParametersToLink();
+    }
+</script>
+
+<div class="card">
+    <div class="card-body">
+        <form method="POST">
+            <p>
+            <h3>Data set #1:</h3>
+
+            <div class="row">
+                <div class="col col-sm-2">
+                    <label class="form-label" for="catalog_index_left">Catalog index:</label>
+
+                    <div class="input-group">
+                        <input id="catalog_index_left" name="catalog_index_left" type="number" class="form-control" placeholder="42" value="">
+                        <span class="input-group-append">
+                    <button class="btn btn-info" type="button" onclick="setRandomCatalogIndex('catalog_index_left')">
+                      <i class="fa fa-random" aria-hidden="true"></i>
+                    </button>
+                  </span>
+                    </div>
+
+                </div>
+                <div class="col col-sm-1">
+                    <label class="form-label" for="sep_left">Separator:</label>
+                    <div class="input-group">
+                        <input id="sep_left" name="sep_left" type="text" class="form-control" placeholder=";" value=";">
+                        <span class="input-group-append">
+                <button class="btn btn-info" type="button" onclick="exchangeSeparator('sep_left')">
+                  <i class="fa fa-exchange" aria-hidden="true"></i>
+                </button>
+              </span>
+                    </div>
+                </div>
+            </div>
+            </p>
+
+            <p>
+            <h3>Data set #2:</h3>
+
+            <div class="row">
+            <div class="col col-sm-2">
+                    <label class="form-label" for="catalog_index_right">Catalog index:</label>
+
+                    <div class="input-group">
+                        <input id="catalog_index_right" name="catalog_index_right" type="number" class="form-control" placeholder="42" value="">
+                        <span class="input-group-append">
+                    <button class="btn btn-info" type="button" onclick="setRandomCatalogIndex('catalog_index_right')">
+                      <i class="fa fa-random" aria-hidden="true"></i>
+                    </button>
+                  </span>
+                    </div>
+
+                </div>
+                <div class="col col-sm-1">
+                    <label class="form-label" for="sep_right">Separator:</label>
+                    <div class="input-group">
+                        <input id="sep_right" name="sep_right" type="text" class="form-control" placeholder=";" value=";">
+                        <span class="input-group-append">
+                <button class="btn btn-info" type="button" onclick="exchangeSeparator('sep_right')">
+                  <i class="fa fa-exchange" aria-hidden="true"></i>
+                </button>
+              </span>
+                    </div>
+                </div>
+            </div>
+            </p>
+
+
+            <div class="row">
+                <div class="col col-sm-1">
+                    <!--p><button type="button" class="btn btn-info">Join data sets</button></p-->
+                    <p><a id="join" href="" class="btn btn-info">Join data sets</a></p>
+                </div>
+            </div>
+
+            <script>
+                function  addParametersToLink() {
+                    var currentSepLeft = document.getElementById("sep_left").value;
+                    var currentSepRight = document.getElementById("sep_right").value;
+
+                    var currentIndexLeft = document.getElementById("catalog_index_left").value;
+                    var currentIndexRight = document.getElementById("catalog_index_right").value;
+
+                    var href = "/data/join/" +  currentIndexLeft + "/" + currentIndexRight + "?sep_left=" + currentSepLeft + "&sep_right=" + currentSepRight;
+                    document.getElementById("join").setAttribute("href", href);
+                    history.pushState(null, "", href);
+                }
+
+                setRandomCatalogIndex("catalog_index_left");
+                setRandomCatalogIndex("catalog_index_right");
+                addParametersToLink()
+            </script>
+
+        </form>
+    </div>
+</div>
+
+{% endblock content %}

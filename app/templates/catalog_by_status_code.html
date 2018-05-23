@@ -1,0 +1,122 @@
+
+<!--
+This program is part of the **Open Government Data Service** project
+
+Author: Elias Grünewald <gruenewald@tu-berlin.de>
+
+License : GPL(v3)
+
+The **Open Government Data Service** is free software: you can redistribute it and/or modify it under the terms of the
+GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+The **Open Government Data Service** is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+GNU General Public License for more details. You should have received a copy of the GNU General Public License along
+with **Open Government Data Service**. If not, see http://www.gnu.org/licenses.
+-->
+
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h1>{% block title %} Data catalog {% endblock %}</h1>
+
+<p>
+<div class="card">
+  <div class="card-body">
+
+    {% if status_code == 200 %}
+    <div class="col-12">
+      <div class="card text-white bg-success o-hidden h-100">
+        <div class="card-body">
+          <div class="card-body-icon"><i class="fa fa-fw fa-plus-circle"></i></div>
+          <h6>{{ status_code }} | {{ status_code_description }}</h6>
+        </div>
+      </div>
+    </div>
+    {% elif status_code >=  403 and  status_code <= 405 %}
+    <div class="col-12" style="margin: 0.5%;">
+      <div class="card text-white bg-danger o-hidden h-100">
+        <div class="card-body">
+          <div class="card-body-icon"><i class="fa fa-fw fa-exclamation-circle"></i></div>
+          <h6>{{ status_code }} | {{ status_code_description }}</h6>
+        </div>
+      </div>
+    </div>
+    {% elif status_code >=300 and status_code < 400 %}
+    <div class="col-12" style="margin: 0.5%;">
+      <div class="card text-white bg-warning o-hidden h-100">
+        <div class="card-body">
+          <div class="card-body-icon"><i class="fa fa-fw fa-arrow-circle-right"></i></div>
+          <h6>{{ status_code }} | {{ status_code_description }}</h6>
+        </div>
+      </div>
+    </div>
+    {% elif (status_code ==  999) %}
+    <div class="col-12" style="margin: 0.5%;">
+      <div class="card text-white bg-info o-hidden h-100">
+        <div class="card-body">
+          <div class="card-body-icon"><i class="fa fa-fw fa-question-circle"></i></div>
+          <h6>{{ status_code }} | {{ status_code_description }}</h6>
+        </div>
+      </div>
+    </div>
+    {% else %}
+    <div class="col-12" style="margin: 0.5%;">
+      <div class="card text-white bg-secondary o-hidden h-100">
+        <div class="card-body">
+          <div class="card-body-icon"><i class="fa fa-fw fa-minus-circle"></i></div>
+          <h6>{{ status_code }} | {{ status_code_description }}</h6>
+        </div>
+      </div>
+    </div>
+    {% endif %}
+
+  </div>
+</div>
+</p>
+
+<div class="card mb-3">
+        <div class="card-body">
+          <div class="table-responsive">
+            <table table class="table table-bordered table-striped" width="100%" cellspacing="0">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>JSON/API</th>
+                  <th>Status</th>
+                  <th>Description</th>
+                  <th>External source</th>
+                </tr>
+              </thead>
+              <tfoot>
+                <tr>
+                  <th>#</th>
+                  <th>JSON/API</th>
+                  <th>Status</th>
+                  <th>Description</th>
+                  <th>External source</th>
+                </tr>
+              </tfoot>
+              <tbody>
+
+              {% for index, series in catalog.iterrows() %}
+                <tr>
+                    <td><a href="/data/{{ series['catalog_index'] }}">{{ series['catalog_index'] }}</a></td>
+                    <td><a href="/api/data/{{ series['catalog_index'] }}">/api/data/{{ series['catalog_index'] }}</a></td>
+                    <td>{{ series['status_code'] }}</td>
+                    <td><b>{{ series['description']|truncate(50, True) }}</b></td>
+                    <td><a href="{{ series['target_url'] }}">{{ series['target_url']|truncate(25, True)}}</a></td>
+                </tr>
+              {% endfor %}
+
+               </tbody>
+              </table>
+
+          </div>
+        </div>
+        <div class="card-footer small text-muted">See <a href="/api/data/">full catalog </a>. {{ catalog_timestamp }}</div>
+      </div>
+
+{% endblock %}
