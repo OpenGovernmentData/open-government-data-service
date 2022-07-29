@@ -17,7 +17,7 @@ jsonpointer==1.14
 jsonschema==2.6.0
 linear-tsv==1.1.0
 MarkupSafe==1.0
-mistune==0.8.3
+mistune==2.0.3
 openpyxl==2.5.0
 python-dateutil==2.6.1
 PyYAML==3.12
